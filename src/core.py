@@ -9,9 +9,12 @@ from __future__ import annotations
 
 import json
 import logging
+import os
 import re
+import shutil
 import sys
 from datetime import datetime, timezone
+from pathlib import Path
 from typing import Any
 
 from pyspark.sql import DataFrame, SparkSession, Window
@@ -209,6 +212,53 @@ def write_csv(
 
     output_df = df.coalesce(1) if single_file else df
     output_df.write.mode(mode).option("header", True).csv(output_path)
+
+
+def write_local_csv_file(df: DataFrame, output_file_path: str, mode: str = "overwrite") -> None:
+    """Write a local DataFrame as one normal CSV file.
+
+    Spark's native CSV writer creates a folder containing a `part-...csv` file.
+    That is fine for data platforms, but awkward for someone checking the result
+    on a laptop. This helper keeps Spark for the actual write, then moves the
+    single part file to a predictable name such as `sales.csv`.
+    """
+
+    output_file = Path(output_file_path)
+    temp_dir = output_file.parent / f".{output_file.stem}_spark_csv_tmp"
+
+    if output_file.exists():
+        if mode != "overwrite":
+            raise FileExistsError(f"{output_file} already exists")
+        output_file.unlink()
+    if temp_dir.exists():
+        shutil.rmtree(temp_dir)
+
+    output_file.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        write_csv(df, str(temp_dir), mode="overwrite", single_file=True)
+        part_files = sorted(temp_dir.glob("part-*.csv"))
+        if len(part_files) != 1:
+            raise RuntimeError(f"Expected exactly one Spark CSV part file in {temp_dir}")
+
+        shutil.move(str(part_files[0]), str(output_file))
+        output_file.chmod(0o644)
+        _clear_macos_file_metadata(output_file)
+    finally:
+        if temp_dir.exists():
+            shutil.rmtree(temp_dir)
+
+
+def _clear_macos_file_metadata(path: Path) -> None:
+    """Remove macOS extended attributes that can block opening local CSV files."""
+
+    if not hasattr(os, "listxattr") or not hasattr(os, "removexattr"):
+        return
+
+    for attribute in os.listxattr(path):
+        try:
+            os.removexattr(path, attribute)
+        except OSError:
+            pass
 
 
 def register_parquet_table_in_catalog(

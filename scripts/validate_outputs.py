@@ -66,8 +66,8 @@ def main() -> None:
         quarantine = spark.read.parquet(str(output_root / "quarantine" / "silver"))
         gold_sales = spark.read.parquet(str(output_root / "gold" / "sales"))
         gold_customer = spark.read.parquet(str(output_root / "gold" / "customer"))
-        gold_sales_csv = spark.read.option("header", True).csv(str(output_root / "gold_csv" / "sales"))
-        gold_customer_csv = spark.read.option("header", True).csv(str(output_root / "gold_csv" / "customer"))
+        gold_sales_csv = spark.read.option("header", True).csv(str(output_root / "gold_csv" / "sales.csv"))
+        gold_customer_csv = spark.read.option("header", True).csv(str(output_root / "gold_csv" / "customer.csv"))
 
         latest = silver.agg(F.max("order_date").alias("latest")).collect()[0]["latest"]
 

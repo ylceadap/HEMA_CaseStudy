@@ -24,7 +24,7 @@ from core import (
     split_bronze_by_order_date,
     split_silver_valid_quarantine,
     transform_bronze,
-    write_csv,
+    write_local_csv_file,
     write_parquet,
 )
 
@@ -57,8 +57,8 @@ def main() -> None:
     silver_quarantine_path = output_root / "quarantine" / "silver"
     gold_sales_path = output_root / "gold" / "sales"
     gold_customer_path = output_root / "gold" / "customer"
-    gold_sales_csv_path = output_root / "gold_csv" / "sales"
-    gold_customer_csv_path = output_root / "gold_csv" / "customer"
+    gold_sales_csv_path = output_root / "gold_csv" / "sales.csv"
+    gold_customer_csv_path = output_root / "gold_csv" / "customer.csv"
 
     logger = configure_logger("local_pipeline", args.pipeline_run_id).bind(
         input_path=args.input_path,
@@ -92,11 +92,11 @@ def main() -> None:
         silver = read_parquet(spark, str(silver_path))
         gold_sales = create_gold_sales(silver)
         write_parquet(gold_sales, str(gold_sales_path), gold_sales_partition_columns())
-        write_csv(gold_sales, str(gold_sales_csv_path))
+        write_local_csv_file(gold_sales, str(gold_sales_csv_path))
 
         gold_customer = create_gold_customer(silver)
         write_parquet(gold_customer, str(gold_customer_path), gold_customer_partition_columns())
-        write_csv(gold_customer, str(gold_customer_csv_path))
+        write_local_csv_file(gold_customer, str(gold_customer_csv_path))
         logger.info("pipeline_end", status="succeeded")
     except Exception:
         logger.exception("pipeline_failed", status="failed")

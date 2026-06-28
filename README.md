@@ -288,7 +288,7 @@ Gold functions are implemented in [src/core.py](src/core.py).
 - `tests/`: unit and end-to-end tests for Bronze, Silver, Gold Sales, and Gold Customer logic.
 - `data/train.csv`: source dataset used for local execution.
 - `data/processed/`: generated sample outputs from the local pipeline.
-- `data/processed/gold_csv/`: reviewer-friendly CSV copies of Gold outputs.
+- `data/processed/gold_csv/`: reviewer-friendly single-file CSV copies of Gold outputs.
 
 ## 6. Output Locations
 
@@ -300,10 +300,12 @@ Parquet is the canonical medallion storage format.
 - `data/processed/quarantine/silver`: Silver rejected rows.
 - `data/processed/gold/sales`: Gold Sales Parquet.
 - `data/processed/gold/customer`: Gold Customer snapshot Parquet.
-- `data/processed/gold_csv/sales`: CSV copy of Gold Sales.
-- `data/processed/gold_csv/customer`: CSV copy of Gold Customer.
+- `data/processed/gold_csv/sales.csv`: CSV copy of Gold Sales.
+- `data/processed/gold_csv/customer.csv`: CSV copy of Gold Customer.
 
-Spark `_SUCCESS` files and CRC files are ignored by git.
+The local CSV copies are written as normal `.csv` files instead of Spark `part-...csv`
+folders, so they can be opened directly from Finder or spreadsheet tools. Spark
+`_SUCCESS` files and CRC files are ignored by git.
 
 ## 7. Environment Requirements
 

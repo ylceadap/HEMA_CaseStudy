@@ -1,0 +1,794 @@
+customer_id,customer_first_name,customer_last_name,customer_segment,country,orders_last_month,orders_last_6_months,orders_all_time,snapshot_date,snapshot_year,snapshot_month,snapshot_day
+AA-10315,Alex,Avila,Consumer,United States,0,0,5,2018-12-30,2018,12,30
+AA-10375,Allen,Armold,Consumer,United States,1,2,9,2018-12-30,2018,12,30
+AA-10480,Andrew,Allen,Consumer,United States,0,0,4,2018-12-30,2018,12,30
+AA-10645,Anna,Andreadi,Consumer,United States,0,1,6,2018-12-30,2018,12,30
+AB-10015,Aaron,Bergman,Consumer,United States,0,0,3,2018-12-30,2018,12,30
+AB-10060,Adam,Bellavance,Home Office,United States,0,3,8,2018-12-30,2018,12,30
+AB-10105,Adrian,Barton,Consumer,United States,0,3,10,2018-12-30,2018,12,30
+AB-10150,Aimee,Bixby,Consumer,United States,0,2,5,2018-12-30,2018,12,30
+AB-10165,Alan,Barnes,Consumer,United States,1,2,8,2018-12-30,2018,12,30
+AB-10255,Alejandro,Ballentine,Home Office,United States,0,1,9,2018-12-30,2018,12,30
+AB-10600,Ann,Blume,Corporate,United States,0,1,4,2018-12-30,2018,12,30
+AC-10420,Alyssa,Crouse,Corporate,United States,0,0,3,2018-12-30,2018,12,30
+AC-10450,Amy,Cox,Consumer,United States,1,2,7,2018-12-30,2018,12,30
+AC-10615,Ann,Chong,Corporate,United States,1,2,5,2018-12-30,2018,12,30
+AC-10660,Anna,Chung,Consumer,United States,0,0,5,2018-12-30,2018,12,30
+AD-10180,Alan,Dominguez,Home Office,United States,1,2,8,2018-12-30,2018,12,30
+AF-10870,Art,Ferguson,Consumer,United States,0,2,7,2018-12-30,2018,12,30
+AF-10885,Art,Foster,Consumer,United States,0,0,4,2018-12-30,2018,12,30
+AG-10270,Alejandro,Grove,Consumer,United States,0,0,5,2018-12-30,2018,12,30
+AG-10300,Aleksandra,Gannaway,Corporate,United States,0,1,4,2018-12-30,2018,12,30
+AG-10330,Alex,Grayson,Consumer,United States,4,4,5,2018-12-30,2018,12,30
+AG-10390,Allen,Goldenen,Consumer,United States,0,1,5,2018-12-30,2018,12,30
+AG-10495,Andrew,Gjertsen,Corporate,United States,0,1,7,2018-12-30,2018,12,30
+AG-10525,Andy,Gerbode,Corporate,United States,0,0,4,2018-12-30,2018,12,30
+AG-10675,Anna,Gayman,Consumer,United States,0,3,7,2018-12-30,2018,12,30
+AG-10765,Anthony,Garverick,Home Office,United States,0,1,4,2018-12-30,2018,12,30
+AG-10900,Arthur,Gainer,Consumer,United States,0,2,10,2018-12-30,2018,12,30
+AH-10030,Aaron,Hawkins,Corporate,United States,1,1,7,2018-12-30,2018,12,30
+AH-10075,Adam,Hart,Corporate,United States,0,3,10,2018-12-30,2018,12,30
+AH-10120,Adrian,Hane,Home Office,United States,0,3,7,2018-12-30,2018,12,30
+AH-10195,Alan,Haines,Corporate,United States,0,2,4,2018-12-30,2018,12,30
+AH-10210,Alan,Hwang,Consumer,United States,1,4,9,2018-12-30,2018,12,30
+AH-10465,Amy,Hunt,Consumer,United States,0,0,5,2018-12-30,2018,12,30
+AH-10585,Angele,Hood,Consumer,United States,1,2,4,2018-12-30,2018,12,30
+AH-10690,Anna,Häberlin,Corporate,United States,0,0,12,2018-12-30,2018,12,30
+AI-10855,Arianne,Irving,Consumer,United States,2,3,10,2018-12-30,2018,12,30
+AJ-10780,Anthony,Jacobs,Corporate,United States,0,1,7,2018-12-30,2018,12,30
+AJ-10795,Anthony,Johnson,Corporate,United States,0,1,7,2018-12-30,2018,12,30
+AJ-10945,Ashley,Jarboe,Consumer,United States,0,1,6,2018-12-30,2018,12,30
+AJ-10960,Astrea,Jones,Consumer,United States,0,1,3,2018-12-30,2018,12,30
+AM-10360,Alice,McCarthy,Corporate,United States,1,1,5,2018-12-30,2018,12,30
+AM-10705,Anne,McFarland,Consumer,United States,0,1,8,2018-12-30,2018,12,30
+AO-10810,Anthony,O'Donnell,Corporate,United States,0,0,1,2018-12-30,2018,12,30
+AP-10720,Anne,Pryor,Home Office,United States,0,1,6,2018-12-30,2018,12,30
+AP-10915,Arthur,Prichep,Consumer,United States,0,2,10,2018-12-30,2018,12,30
+AR-10345,Alex,Russell,Corporate,United States,0,2,4,2018-12-30,2018,12,30
+AR-10405,Allen,Rosenblatt,Corporate,United States,0,1,5,2018-12-30,2018,12,30
+AR-10510,Andrew,Roberts,Consumer,United States,1,1,5,2018-12-30,2018,12,30
+AR-10540,Andy,Reiter,Consumer,United States,1,1,6,2018-12-30,2018,12,30
+AR-10570,Anemone,Ratner,Consumer,United States,0,0,1,2018-12-30,2018,12,30
+AR-10825,Anthony,Rawles,Corporate,United States,0,3,8,2018-12-30,2018,12,30
+AS-10045,Aaron,Smayling,Corporate,United States,0,3,7,2018-12-30,2018,12,30
+AS-10090,Adam,Shillingsburg,Consumer,United States,1,2,9,2018-12-30,2018,12,30
+AS-10135,Adrian,Shami,Home Office,United States,0,1,2,2018-12-30,2018,12,30
+AS-10225,Alan,Schoenberger,Corporate,United States,1,2,5,2018-12-30,2018,12,30
+AS-10240,Alan,Shonely,Consumer,United States,0,0,5,2018-12-30,2018,12,30
+AS-10285,Alejandro,Savely,Corporate,United States,1,1,6,2018-12-30,2018,12,30
+AS-10630,Ann,Steele,Home Office,United States,0,1,7,2018-12-30,2018,12,30
+AT-10435,Alyssa,Tate,Home Office,United States,1,1,5,2018-12-30,2018,12,30
+AT-10735,Annie,Thurman,Consumer,United States,1,3,10,2018-12-30,2018,12,30
+AW-10840,Anthony,Witt,Consumer,United States,1,2,4,2018-12-30,2018,12,30
+AW-10930,Arthur,Wiediger,Home Office,United States,0,2,7,2018-12-30,2018,12,30
+AY-10555,Andy,Yotov,Corporate,United States,1,1,4,2018-12-30,2018,12,30
+AZ-10750,Annie,Zypern,Consumer,United States,0,1,6,2018-12-30,2018,12,30
+BB-10990,Barry,Blumstein,Corporate,United States,0,1,5,2018-12-30,2018,12,30
+BB-11545,Brenda,Bowman,Corporate,United States,1,4,9,2018-12-30,2018,12,30
+BC-11125,Becky,Castell,Home Office,United States,0,0,9,2018-12-30,2018,12,30
+BD-11320,Bill,Donatelli,Consumer,United States,0,2,12,2018-12-30,2018,12,30
+BD-11500,Bradley,Drucker,Consumer,United States,0,1,6,2018-12-30,2018,12,30
+BD-11560,Brendan,Dodson,Home Office,United States,0,0,2,2018-12-30,2018,12,30
+BD-11605,Brian,Dahlen,Consumer,United States,0,1,6,2018-12-30,2018,12,30
+BD-11620,Brian,DeCherney,Consumer,United States,0,1,6,2018-12-30,2018,12,30
+BD-11635,Brian,Derr,Consumer,United States,1,1,3,2018-12-30,2018,12,30
+BD-11725,Bruce,Degenhardt,Consumer,United States,0,2,6,2018-12-30,2018,12,30
+BD-11770,Bryan,Davis,Consumer,United States,0,0,6,2018-12-30,2018,12,30
+BE-11335,Bill,Eplett,Home Office,United States,0,2,5,2018-12-30,2018,12,30
+BE-11410,Bobby,Elias,Consumer,United States,0,1,5,2018-12-30,2018,12,30
+BE-11455,Brad,Eason,Home Office,United States,0,0,5,2018-12-30,2018,12,30
+BF-10975,Barbara,Fisher,Corporate,United States,0,1,7,2018-12-30,2018,12,30
+BF-11005,Barry,Franz,Home Office,United States,0,1,4,2018-12-30,2018,12,30
+BF-11020,Barry,Französisch,Corporate,United States,0,3,8,2018-12-30,2018,12,30
+BF-11080,Bart,Folk,Consumer,United States,1,2,3,2018-12-30,2018,12,30
+BF-11170,Ben,Ferrer,Home Office,United States,1,1,11,2018-12-30,2018,12,30
+BF-11215,Benjamin,Farhat,Home Office,United States,0,1,4,2018-12-30,2018,12,30
+BF-11275,Beth,Fritzler,Corporate,United States,0,2,3,2018-12-30,2018,12,30
+BG-11035,Barry,Gonzalez,Consumer,United States,1,3,8,2018-12-30,2018,12,30
+BG-11695,Brooke,Gillingham,Corporate,United States,0,2,6,2018-12-30,2018,12,30
+BG-11740,Bruce,Geld,Consumer,United States,0,1,6,2018-12-30,2018,12,30
+BH-11710,Brosina,Hoffman,Consumer,United States,1,1,8,2018-12-30,2018,12,30
+BK-11260,Berenike,Kampe,Consumer,United States,0,2,6,2018-12-30,2018,12,30
+BM-11140,Becky,Martin,Consumer,United States,0,0,4,2018-12-30,2018,12,30
+BM-11575,Brendan,Murry,Corporate,United States,0,1,6,2018-12-30,2018,12,30
+BM-11650,Brian,Moss,Corporate,United States,0,3,11,2018-12-30,2018,12,30
+BM-11785,Bryan,Mills,Consumer,United States,0,0,10,2018-12-30,2018,12,30
+BN-11470,Brad,Norvell,Corporate,United States,1,1,4,2018-12-30,2018,12,30
+BN-11515,Bradley,Nguyen,Consumer,United States,1,2,5,2018-12-30,2018,12,30
+BO-11350,Bill,Overfelt,Corporate,United States,0,1,5,2018-12-30,2018,12,30
+BO-11425,Bobby,Odegard,Consumer,United States,0,1,2,2018-12-30,2018,12,30
+BP-11050,Barry,Pond,Corporate,United States,0,1,5,2018-12-30,2018,12,30
+BP-11095,Bart,Pistole,Corporate,United States,2,3,12,2018-12-30,2018,12,30
+BP-11155,Becky,Pak,Consumer,United States,0,2,6,2018-12-30,2018,12,30
+BP-11185,Ben,Peterman,Corporate,United States,3,4,9,2018-12-30,2018,12,30
+BP-11230,Benjamin,Patterson,Consumer,United States,0,1,5,2018-12-30,2018,12,30
+BP-11290,Beth,Paige,Consumer,United States,1,2,7,2018-12-30,2018,12,30
+BS-11365,Bill,Shonely,Corporate,United States,0,0,5,2018-12-30,2018,12,30
+BS-11380,Bill,Stewart,Corporate,United States,1,2,5,2018-12-30,2018,12,30
+BS-11590,Brendan,Sweed,Corporate,United States,0,1,6,2018-12-30,2018,12,30
+BS-11665,Brian,Stugart,Consumer,United States,0,0,3,2018-12-30,2018,12,30
+BS-11755,Bruce,Stewart,Consumer,United States,1,2,7,2018-12-30,2018,12,30
+BS-11800,Bryan,Spruell,Home Office,United States,0,0,2,2018-12-30,2018,12,30
+BT-11305,Beth,Thompson,Home Office,United States,0,0,5,2018-12-30,2018,12,30
+BT-11395,Bill,Tyler,Corporate,United States,0,0,6,2018-12-30,2018,12,30
+BT-11440,Bobby,Trafton,Consumer,United States,0,0,4,2018-12-30,2018,12,30
+BT-11485,Brad,Thomas,Home Office,United States,0,0,2,2018-12-30,2018,12,30
+BT-11530,Bradley,Talbott,Home Office,United States,0,1,5,2018-12-30,2018,12,30
+BT-11680,Brian,Thompson,Consumer,United States,1,2,7,2018-12-30,2018,12,30
+BV-11245,Benjamin,Venier,Corporate,United States,0,0,5,2018-12-30,2018,12,30
+BW-11065,Barry,Weirich,Consumer,United States,0,0,3,2018-12-30,2018,12,30
+BW-11110,Bart,Watters,Corporate,United States,0,1,8,2018-12-30,2018,12,30
+BW-11200,Ben,Wallace,Consumer,United States,0,0,6,2018-12-30,2018,12,30
+CA-11965,Carol,Adams,Corporate,United States,0,1,6,2018-12-30,2018,12,30
+CA-12055,Cathy,Armstrong,Home Office,United States,0,0,5,2018-12-30,2018,12,30
+CA-12265,Christina,Anderson,Consumer,United States,0,4,8,2018-12-30,2018,12,30
+CA-12310,Christine,Abelman,Corporate,United States,2,2,4,2018-12-30,2018,12,30
+CA-12775,Cynthia,Arntzen,Consumer,United States,0,1,7,2018-12-30,2018,12,30
+CB-12025,Cassandra,Brandow,Consumer,United States,0,4,9,2018-12-30,2018,12,30
+CB-12415,Christy,Brittain,Consumer,United States,1,2,8,2018-12-30,2018,12,30
+CB-12535,Claudia,Bergmann,Corporate,United States,0,0,8,2018-12-30,2018,12,30
+CC-12100,Chad,Cunningham,Home Office,United States,0,0,5,2018-12-30,2018,12,30
+CC-12145,Charles,Crestani,Consumer,United States,0,1,7,2018-12-30,2018,12,30
+CC-12220,Chris,Cortes,Consumer,United States,1,2,11,2018-12-30,2018,12,30
+CC-12370,Christopher,Conant,Consumer,United States,0,2,5,2018-12-30,2018,12,30
+CC-12430,Chuck,Clark,Home Office,United States,1,3,10,2018-12-30,2018,12,30
+CC-12475,Cindy,Chapman,Consumer,United States,0,4,9,2018-12-30,2018,12,30
+CC-12550,Clay,Cheatham,Consumer,United States,2,2,3,2018-12-30,2018,12,30
+CC-12610,Corey,Catlett,Corporate,United States,0,1,7,2018-12-30,2018,12,30
+CC-12670,Craig,Carreira,Consumer,United States,1,1,7,2018-12-30,2018,12,30
+CC-12685,Craig,Carroll,Consumer,United States,0,0,4,2018-12-30,2018,12,30
+CD-11920,Carlos,Daly,Consumer,United States,0,1,5,2018-12-30,2018,12,30
+CD-11980,Carol,Darley,Consumer,United States,0,1,3,2018-12-30,2018,12,30
+CD-12280,Christina,DeMoss,Consumer,United States,0,2,2,2018-12-30,2018,12,30
+CD-12790,Cynthia,Delaney,Home Office,United States,0,0,5,2018-12-30,2018,12,30
+CG-12040,Catherine,Glotzbach,Home Office,United States,0,1,6,2018-12-30,2018,12,30
+CG-12520,Claire,Gute,Consumer,United States,0,0,3,2018-12-30,2018,12,30
+CH-12070,Cathy,Hwang,Home Office,United States,0,0,3,2018-12-30,2018,12,30
+CJ-11875,Carl,Jackson,Corporate,United States,0,0,1,2018-12-30,2018,12,30
+CJ-12010,Caroline,Jumper,Consumer,United States,0,0,8,2018-12-30,2018,12,30
+CK-12205,Chloris,Kastensmidt,Consumer,United States,0,3,13,2018-12-30,2018,12,30
+CK-12325,Christine,Kargatis,Home Office,United States,0,1,5,2018-12-30,2018,12,30
+CK-12595,Clytie,Kelty,Consumer,United States,0,2,11,2018-12-30,2018,12,30
+CK-12760,Cyma,Kinney,Corporate,United States,0,1,9,2018-12-30,2018,12,30
+CL-11890,Carl,Ludwig,Consumer,United States,0,1,4,2018-12-30,2018,12,30
+CL-12565,Clay,Ludtke,Consumer,United States,0,0,12,2018-12-30,2018,12,30
+CL-12700,Craig,Leslie,Home Office,United States,0,0,4,2018-12-30,2018,12,30
+CM-11815,Candace,McMahon,Corporate,United States,0,1,6,2018-12-30,2018,12,30
+CM-11935,Carlos,Meador,Consumer,United States,0,0,2,2018-12-30,2018,12,30
+CM-12115,Chad,McGuire,Consumer,United States,1,2,4,2018-12-30,2018,12,30
+CM-12160,Charles,McCrossin,Consumer,United States,1,4,6,2018-12-30,2018,12,30
+CM-12190,Charlotte,Melton,Consumer,United States,1,3,6,2018-12-30,2018,12,30
+CM-12235,Chris,McAfee,Consumer,United States,0,0,5,2018-12-30,2018,12,30
+CM-12385,Christopher,Martinez,Consumer,United States,0,1,4,2018-12-30,2018,12,30
+CM-12445,Chuck,Magee,Consumer,United States,0,0,3,2018-12-30,2018,12,30
+CM-12655,Corinna,Mitchell,Home Office,United States,1,2,5,2018-12-30,2018,12,30
+CM-12715,Craig,Molinari,Corporate,United States,0,0,4,2018-12-30,2018,12,30
+CP-12085,Cathy,Prescott,Corporate,United States,0,2,8,2018-12-30,2018,12,30
+CP-12340,Christine,Phan,Corporate,United States,0,1,7,2018-12-30,2018,12,30
+CR-12580,Clay,Rozendal,Home Office,United States,0,1,4,2018-12-30,2018,12,30
+CR-12625,Corey,Roper,Home Office,United States,0,0,3,2018-12-30,2018,12,30
+CR-12730,Craig,Reiter,Consumer,United States,0,1,4,2018-12-30,2018,12,30
+CR-12820,Cyra,Reiten,Home Office,United States,0,1,3,2018-12-30,2018,12,30
+CS-11845,Cari,Sayre,Corporate,United States,0,1,5,2018-12-30,2018,12,30
+CS-11860,Cari,Schnelling,Consumer,United States,0,2,6,2018-12-30,2018,12,30
+CS-11950,Carlos,Soltero,Consumer,United States,1,3,11,2018-12-30,2018,12,30
+CS-12130,Chad,Sievert,Consumer,United States,0,0,4,2018-12-30,2018,12,30
+CS-12175,Charles,Sheldon,Corporate,United States,0,0,5,2018-12-30,2018,12,30
+CS-12250,Chris,Selesnick,Corporate,United States,1,3,12,2018-12-30,2018,12,30
+CS-12355,Christine,Sundaresam,Consumer,United States,1,4,11,2018-12-30,2018,12,30
+CS-12400,Christopher,Schild,Home Office,United States,1,4,9,2018-12-30,2018,12,30
+CS-12460,Chuck,Sachs,Consumer,United States,1,2,2,2018-12-30,2018,12,30
+CS-12490,Cindy,Schnelling,Corporate,United States,0,0,4,2018-12-30,2018,12,30
+CS-12505,Cindy,Stewart,Consumer,United States,0,1,6,2018-12-30,2018,12,30
+CT-11995,Carol,Triggs,Consumer,United States,0,1,8,2018-12-30,2018,12,30
+CV-12295,Christina,VanderZanden,Consumer,United States,0,0,5,2018-12-30,2018,12,30
+CV-12805,Cynthia,Voltz,Corporate,United States,1,2,9,2018-12-30,2018,12,30
+CW-11905,Carl,Weiss,Home Office,United States,1,1,6,2018-12-30,2018,12,30
+CY-12745,Craig,Yedwab,Corporate,United States,0,2,7,2018-12-30,2018,12,30
+Co-12640,Corey-Lock,,Consumer,United States,0,0,5,2018-12-30,2018,12,30
+DA-13450,Dianna,Arnett,Home Office,United States,0,0,4,2018-12-30,2018,12,30
+DB-12910,Daniel,Byrd,Home Office,United States,2,3,8,2018-12-30,2018,12,30
+DB-12970,Darren,Budd,Corporate,United States,0,0,4,2018-12-30,2018,12,30
+DB-13060,Dave,Brooks,Consumer,United States,1,2,6,2018-12-30,2018,12,30
+DB-13120,David,Bremer,Corporate,United States,0,1,7,2018-12-30,2018,12,30
+DB-13210,Dean,Braden,Consumer,United States,2,3,10,2018-12-30,2018,12,30
+DB-13270,Deborah,Brumfield,Home Office,United States,0,1,8,2018-12-30,2018,12,30
+DB-13360,Dennis,Bolton,Home Office,United States,0,0,5,2018-12-30,2018,12,30
+DB-13405,Denny,Blanton,Consumer,United States,0,0,4,2018-12-30,2018,12,30
+DB-13555,Dorothy,Badders,Corporate,United States,0,2,7,2018-12-30,2018,12,30
+DB-13615,Doug,Bickford,Consumer,United States,0,2,7,2018-12-30,2018,12,30
+DB-13660,Duane,Benoit,Consumer,United States,1,2,7,2018-12-30,2018,12,30
+DC-12850,Dan,Campbell,Consumer,United States,0,3,9,2018-12-30,2018,12,30
+DC-13285,Debra,Catini,Consumer,United States,1,2,5,2018-12-30,2018,12,30
+DD-13570,Dorothy,Dickinson,Consumer,United States,0,2,6,2018-12-30,2018,12,30
+DE-13255,Deanra,Eno,Home Office,United States,0,0,5,2018-12-30,2018,12,30
+DF-13135,David,Flashing,Consumer,United States,0,0,3,2018-12-30,2018,12,30
+DG-13300,Deirdre,Greer,Corporate,United States,0,1,5,2018-12-30,2018,12,30
+DH-13075,Dave,Hallsten,Corporate,United States,0,0,5,2018-12-30,2018,12,30
+DH-13675,Duane,Huffman,Home Office,United States,0,0,4,2018-12-30,2018,12,30
+DJ-13420,Denny,Joy,Corporate,United States,0,0,4,2018-12-30,2018,12,30
+DJ-13510,Don,Jones,Corporate,United States,0,3,8,2018-12-30,2018,12,30
+DJ-13630,Doug,Jacobs,Consumer,United States,1,1,3,2018-12-30,2018,12,30
+DK-12835,Damala,Kotsonis,Corporate,United States,1,4,12,2018-12-30,2018,12,30
+DK-12895,Dana,Kaydos,Consumer,United States,0,3,5,2018-12-30,2018,12,30
+DK-12985,Darren,Koutras,Consumer,United States,1,1,5,2018-12-30,2018,12,30
+DK-13090,Dave,Kipp,Consumer,United States,0,3,7,2018-12-30,2018,12,30
+DK-13150,David,Kendrick,Corporate,United States,1,1,2,2018-12-30,2018,12,30
+DK-13225,Dean,Katz,Corporate,United States,1,1,9,2018-12-30,2018,12,30
+DK-13375,Dennis,Kane,Consumer,United States,1,3,8,2018-12-30,2018,12,30
+DL-12865,Dan,Lawera,Consumer,United States,0,1,7,2018-12-30,2018,12,30
+DL-12925,Daniel,Lacy,Consumer,United States,0,1,6,2018-12-30,2018,12,30
+DL-13315,Delfina,Latchford,Consumer,United States,1,2,8,2018-12-30,2018,12,30
+DL-13330,Denise,Leinenbach,Consumer,United States,0,1,4,2018-12-30,2018,12,30
+DL-13495,Dionis,Lloyd,Corporate,United States,0,3,8,2018-12-30,2018,12,30
+DM-12955,Dario,Medina,Corporate,United States,0,1,7,2018-12-30,2018,12,30
+DM-13015,Darrin,Martin,Consumer,United States,0,3,7,2018-12-30,2018,12,30
+DM-13345,Denise,Monton,Corporate,United States,1,1,8,2018-12-30,2018,12,30
+DM-13525,Don,Miller,Corporate,United States,0,0,3,2018-12-30,2018,12,30
+DN-13690,Duane,Noonan,Consumer,United States,0,0,7,2018-12-30,2018,12,30
+DO-13435,Denny,Ordway,Consumer,United States,0,1,9,2018-12-30,2018,12,30
+DO-13645,Doug,O'Connell,Consumer,United States,1,6,7,2018-12-30,2018,12,30
+DP-13000,Darren,Powers,Consumer,United States,0,1,8,2018-12-30,2018,12,30
+DP-13105,Dave,Poirier,Corporate,United States,2,3,8,2018-12-30,2018,12,30
+DP-13165,David,Philippe,Consumer,United States,0,0,2,2018-12-30,2018,12,30
+DP-13390,Dennis,Pardue,Home Office,United States,0,0,9,2018-12-30,2018,12,30
+DR-12880,Dan,Reichenbach,Corporate,United States,1,2,9,2018-12-30,2018,12,30
+DR-12940,Daniel,Raglin,Home Office,United States,0,2,8,2018-12-30,2018,12,30
+DS-13030,Darrin,Sayre,Home Office,United States,0,1,4,2018-12-30,2018,12,30
+DS-13180,David,Smith,Corporate,United States,1,1,9,2018-12-30,2018,12,30
+DV-13045,Darrin,Van Huff,Corporate,United States,2,3,5,2018-12-30,2018,12,30
+DV-13465,Dianna,Vittorini,Consumer,United States,1,1,5,2018-12-30,2018,12,30
+DW-13195,David,Wiener,Corporate,United States,0,2,6,2018-12-30,2018,12,30
+DW-13480,Dianna,Wilson,Home Office,United States,0,0,5,2018-12-30,2018,12,30
+DW-13540,Don,Weiss,Consumer,United States,0,2,5,2018-12-30,2018,12,30
+DW-13585,Dorothy,Wardle,Corporate,United States,0,0,7,2018-12-30,2018,12,30
+Dl-13600,Dorris,liebe,Corporate,United States,0,1,5,2018-12-30,2018,12,30
+Dp-13240,Dean,percer,Home Office,United States,0,5,11,2018-12-30,2018,12,30
+EA-14035,Erin,Ashbrook,Corporate,United States,0,1,12,2018-12-30,2018,12,30
+EB-13705,Ed,Braxton,Corporate,United States,0,2,9,2018-12-30,2018,12,30
+EB-13750,Edward,Becker,Corporate,United States,0,2,10,2018-12-30,2018,12,30
+EB-13840,Ellis,Ballard,Corporate,United States,0,1,4,2018-12-30,2018,12,30
+EB-13870,Emily,Burns,Consumer,United States,0,1,10,2018-12-30,2018,12,30
+EB-13930,Eric,Barreto,Consumer,United States,0,1,5,2018-12-30,2018,12,30
+EB-13975,Erica,Bern,Corporate,United States,1,1,4,2018-12-30,2018,12,30
+EB-14110,Eugene,Barchas,Consumer,United States,0,1,6,2018-12-30,2018,12,30
+EB-14170,Evan,Bailliet,Consumer,United States,0,1,6,2018-12-30,2018,12,30
+EC-14050,Erin,Creighton,Consumer,United States,0,2,5,2018-12-30,2018,12,30
+ED-13885,Emily,Ducich,Home Office,United States,0,1,8,2018-12-30,2018,12,30
+EG-13900,Emily,Grady,Consumer,United States,1,2,5,2018-12-30,2018,12,30
+EH-13765,Edward,Hooks,Corporate,United States,0,1,10,2018-12-30,2018,12,30
+EH-13945,Eric,Hoffmann,Consumer,United States,0,0,8,2018-12-30,2018,12,30
+EH-13990,Erica,Hackney,Consumer,United States,0,0,6,2018-12-30,2018,12,30
+EH-14005,Erica,Hernandez,Home Office,United States,2,3,7,2018-12-30,2018,12,30
+EH-14125,Eugene,Hildebrand,Home Office,United States,0,1,10,2018-12-30,2018,12,30
+EH-14185,Evan,Henry,Consumer,United States,0,1,6,2018-12-30,2018,12,30
+EJ-13720,Ed,Jacobs,Consumer,United States,0,0,4,2018-12-30,2018,12,30
+EJ-14155,Eva,Jacobs,Consumer,United States,0,2,5,2018-12-30,2018,12,30
+EK-13795,Eileen,Kiefer,Home Office,United States,0,1,4,2018-12-30,2018,12,30
+EL-13735,Ed,Ludwig,Home Office,United States,0,1,2,2018-12-30,2018,12,30
+EM-13810,Eleni,McCrary,Corporate,United States,0,1,5,2018-12-30,2018,12,30
+EM-13825,Elizabeth,Moffitt,Corporate,United States,0,2,8,2018-12-30,2018,12,30
+EM-13960,Eric,Murdock,Consumer,United States,0,1,5,2018-12-30,2018,12,30
+EM-14065,Erin,Mull,Consumer,United States,0,1,4,2018-12-30,2018,12,30
+EM-14095,Eudokia,Martin,Corporate,United States,0,1,4,2018-12-30,2018,12,30
+EM-14140,Eugene,Moren,Home Office,United States,0,1,6,2018-12-30,2018,12,30
+EM-14200,Evan,Minnotte,Home Office,United States,0,1,3,2018-12-30,2018,12,30
+EN-13780,Edward,Nazzal,Consumer,United States,0,0,4,2018-12-30,2018,12,30
+EP-13915,Emily,Phan,Consumer,United States,2,7,17,2018-12-30,2018,12,30
+ER-13855,Elpida,Rittenbach,Corporate,United States,0,0,3,2018-12-30,2018,12,30
+ES-14020,Erica,Smith,Consumer,United States,0,2,5,2018-12-30,2018,12,30
+ES-14080,Erin,Smith,Corporate,United States,1,2,9,2018-12-30,2018,12,30
+FA-14230,Frank,Atkinson,Corporate,United States,0,1,7,2018-12-30,2018,12,30
+FC-14245,Frank,Carlisle,Home Office,United States,0,2,7,2018-12-30,2018,12,30
+FC-14335,Fred,Chung,Corporate,United States,0,0,7,2018-12-30,2018,12,30
+FG-14260,Frank,Gastineau,Home Office,United States,0,5,7,2018-12-30,2018,12,30
+FH-14275,Frank,Hawley,Corporate,United States,0,4,10,2018-12-30,2018,12,30
+FH-14350,Fred,Harton,Consumer,United States,0,0,4,2018-12-30,2018,12,30
+FH-14365,Fred,Hopkins,Corporate,United States,1,4,8,2018-12-30,2018,12,30
+FM-14215,Filia,McAdams,Corporate,United States,1,1,10,2018-12-30,2018,12,30
+FM-14290,Frank,Merwin,Home Office,United States,0,4,9,2018-12-30,2018,12,30
+FM-14380,Fred,McMath,Consumer,United States,0,1,9,2018-12-30,2018,12,30
+FO-14305,Frank,Olsen,Consumer,United States,0,2,10,2018-12-30,2018,12,30
+FP-14320,Frank,Preis,Consumer,United States,1,2,8,2018-12-30,2018,12,30
+FW-14395,Fred,Wasserman,Corporate,United States,0,0,3,2018-12-30,2018,12,30
+GA-14515,George,Ashbrook,Consumer,United States,0,1,5,2018-12-30,2018,12,30
+GA-14725,Guy,Armstrong,Consumer,United States,1,3,11,2018-12-30,2018,12,30
+GB-14530,George,Bell,Corporate,United States,0,1,11,2018-12-30,2018,12,30
+GB-14575,Giulietta,Baptist,Consumer,United States,1,1,5,2018-12-30,2018,12,30
+GD-14590,Giulietta,Dortch,Corporate,United States,1,1,4,2018-12-30,2018,12,30
+GG-14650,Greg,Guthrie,Corporate,United States,0,3,9,2018-12-30,2018,12,30
+GH-14410,Gary,Hansen,Home Office,United States,0,2,9,2018-12-30,2018,12,30
+GH-14425,Gary,Hwang,Consumer,United States,0,1,4,2018-12-30,2018,12,30
+GH-14485,Gene,Hale,Corporate,United States,0,0,2,2018-12-30,2018,12,30
+GH-14665,Greg,Hansen,Consumer,United States,1,1,2,2018-12-30,2018,12,30
+GK-14620,Grace,Kelly,Corporate,United States,0,1,9,2018-12-30,2018,12,30
+GM-14440,Gary,McGarr,Consumer,United States,0,2,7,2018-12-30,2018,12,30
+GM-14455,Gary,Mitchum,Home Office,United States,1,2,6,2018-12-30,2018,12,30
+GM-14500,Gene,McClure,Consumer,United States,0,3,10,2018-12-30,2018,12,30
+GM-14680,Greg,Matthias,Consumer,United States,0,1,6,2018-12-30,2018,12,30
+GM-14695,Greg,Maxwell,Corporate,United States,0,1,3,2018-12-30,2018,12,30
+GP-14740,Guy,Phonely,Corporate,United States,0,0,2,2018-12-30,2018,12,30
+GR-14560,Georgia,Rosenberg,Corporate,United States,0,0,2,2018-12-30,2018,12,30
+GT-14635,Grant,Thornton,Corporate,United States,0,1,3,2018-12-30,2018,12,30
+GT-14710,Greg,Tran,Consumer,United States,0,2,11,2018-12-30,2018,12,30
+GT-14755,Guy,Thornton,Consumer,United States,0,1,4,2018-12-30,2018,12,30
+GW-14605,Giulietta,Weimer,Consumer,United States,1,2,7,2018-12-30,2018,12,30
+GZ-14470,Gary,Zandusky,Consumer,United States,1,2,9,2018-12-30,2018,12,30
+GZ-14545,George,Zrebassa,Corporate,United States,0,1,4,2018-12-30,2018,12,30
+HA-14905,Helen,Abelman,Consumer,United States,0,2,7,2018-12-30,2018,12,30
+HA-14920,Helen,Andreada,Consumer,United States,1,2,8,2018-12-30,2018,12,30
+HD-14785,Harold,Dahlen,Home Office,United States,0,0,3,2018-12-30,2018,12,30
+HE-14800,Harold,Engle,Corporate,United States,1,2,3,2018-12-30,2018,12,30
+HF-14995,Herbert,Flentye,Consumer,United States,1,1,7,2018-12-30,2018,12,30
+HG-14845,Harry,Greene,Consumer,United States,0,2,5,2018-12-30,2018,12,30
+HG-14965,Henry,Goldwyn,Corporate,United States,1,2,12,2018-12-30,2018,12,30
+HG-15025,Hunter,Glantz,Consumer,United States,1,2,7,2018-12-30,2018,12,30
+HH-15010,Hilary,Holden,Corporate,United States,0,1,2,2018-12-30,2018,12,30
+HJ-14875,Heather,Jas,Home Office,United States,0,1,5,2018-12-30,2018,12,30
+HK-14890,Heather,Kirkland,Corporate,United States,0,1,8,2018-12-30,2018,12,30
+HL-15040,Hunter,Lopez,Consumer,United States,0,2,6,2018-12-30,2018,12,30
+HM-14860,Harry,Marie,Corporate,United States,1,4,10,2018-12-30,2018,12,30
+HM-14980,Henry,MacAllister,Consumer,United States,0,0,4,2018-12-30,2018,12,30
+HP-14815,Harold,Pawlan,Home Office,United States,1,1,7,2018-12-30,2018,12,30
+HR-14770,Hallie,Redmond,Home Office,United States,1,1,4,2018-12-30,2018,12,30
+HR-14830,Harold,Ryan,Corporate,United States,0,1,7,2018-12-30,2018,12,30
+HW-14935,Helen,Wasserman,Corporate,United States,0,2,7,2018-12-30,2018,12,30
+HZ-14950,Henia,Zydlo,Consumer,United States,0,3,5,2018-12-30,2018,12,30
+IG-15085,Ivan,Gibson,Consumer,United States,0,1,4,2018-12-30,2018,12,30
+IL-15100,Ivan,Liston,Consumer,United States,0,1,7,2018-12-30,2018,12,30
+IM-15055,Ionia,McGrath,Consumer,United States,0,0,2,2018-12-30,2018,12,30
+IM-15070,Irene,Maddox,Consumer,United States,0,0,7,2018-12-30,2018,12,30
+JA-15970,Joseph,Airdo,Consumer,United States,0,3,8,2018-12-30,2018,12,30
+JB-15400,Jennifer,Braxton,Corporate,United States,1,4,10,2018-12-30,2018,12,30
+JB-15925,Joni,Blumstein,Consumer,United States,0,0,3,2018-12-30,2018,12,30
+JB-16000,Joy,Bell-,Consumer,United States,0,4,7,2018-12-30,2018,12,30
+JB-16045,Julia,Barnett,Home Office,United States,1,1,5,2018-12-30,2018,12,30
+JC-15340,Jasper,Cacioppo,Consumer,United States,0,1,4,2018-12-30,2018,12,30
+JC-15385,Jenna,Caffey,Consumer,United States,0,1,1,2018-12-30,2018,12,30
+JC-15775,John,Castell,Consumer,United States,0,2,9,2018-12-30,2018,12,30
+JC-16105,Julie,Creighton,Corporate,United States,0,2,5,2018-12-30,2018,12,30
+JD-15790,John,Dryer,Consumer,United States,0,1,5,2018-12-30,2018,12,30
+JD-15895,Jonathan,Doherty,Corporate,United States,0,0,11,2018-12-30,2018,12,30
+JD-16015,Joy,Daniels,Consumer,United States,0,2,6,2018-12-30,2018,12,30
+JD-16060,Julia,Dunbar,Consumer,United States,0,0,3,2018-12-30,2018,12,30
+JD-16150,Justin,Deggeller,Corporate,United States,0,1,8,2018-12-30,2018,12,30
+JE-15475,Jeremy,Ellison,Consumer,United States,0,0,6,2018-12-30,2018,12,30
+JE-15610,Jim,Epp,Corporate,United States,0,3,7,2018-12-30,2018,12,30
+JE-15715,Joe,Elijah,Consumer,United States,0,2,10,2018-12-30,2018,12,30
+JE-15745,Joel,Eaton,Consumer,United States,0,2,13,2018-12-30,2018,12,30
+JE-16165,Justin,Ellison,Corporate,United States,1,2,3,2018-12-30,2018,12,30
+JF-15190,Jamie,Frazer,Consumer,United States,0,2,6,2018-12-30,2018,12,30
+JF-15295,Jason,Fortune-,Consumer,United States,0,0,5,2018-12-30,2018,12,30
+JF-15355,Jay,Fein,Consumer,United States,0,2,6,2018-12-30,2018,12,30
+JF-15415,Jennifer,Ferguson,Consumer,United States,1,2,5,2018-12-30,2018,12,30
+JF-15490,Jeremy,Farry,Consumer,United States,0,1,10,2018-12-30,2018,12,30
+JF-15565,Jill,Fjeld,Consumer,United States,0,1,8,2018-12-30,2018,12,30
+JG-15115,Jack,Garza,Consumer,United States,0,0,3,2018-12-30,2018,12,30
+JG-15160,James,Galang,Consumer,United States,1,2,11,2018-12-30,2018,12,30
+JG-15310,Jason,Gross,Corporate,United States,2,3,6,2018-12-30,2018,12,30
+JG-15805,John,Grady,Corporate,United States,0,0,6,2018-12-30,2018,12,30
+JH-15430,Jennifer,Halladay,Consumer,United States,1,3,4,2018-12-30,2018,12,30
+JH-15820,John,Huston,Consumer,United States,0,1,6,2018-12-30,2018,12,30
+JH-15910,Jonathan,Howell,Consumer,United States,0,1,7,2018-12-30,2018,12,30
+JH-15985,Joseph,Holt,Consumer,United States,1,1,6,2018-12-30,2018,12,30
+JH-16180,Justin,Hirsh,Consumer,United States,0,0,4,2018-12-30,2018,12,30
+JJ-15445,Jennifer,Jackson,Consumer,United States,0,0,5,2018-12-30,2018,12,30
+JJ-15760,Joel,Jenkins,Home Office,United States,0,0,2,2018-12-30,2018,12,30
+JK-15205,Jamie,Kunitz,Consumer,United States,0,1,4,2018-12-30,2018,12,30
+JK-15325,Jason,Klamczynski,Corporate,United States,0,0,3,2018-12-30,2018,12,30
+JK-15370,Jay,Kimmel,Consumer,United States,0,3,7,2018-12-30,2018,12,30
+JK-15625,Jim,Karlsson,Consumer,United States,0,1,7,2018-12-30,2018,12,30
+JK-15640,Jim,Kriz,Home Office,United States,0,1,9,2018-12-30,2018,12,30
+JK-15730,Joe,Kamberova,Consumer,United States,0,2,9,2018-12-30,2018,12,30
+JK-16090,Juliana,Krohn,Consumer,United States,1,2,3,2018-12-30,2018,12,30
+JK-16120,Julie,Kriz,Home Office,United States,0,1,10,2018-12-30,2018,12,30
+JL-15130,Jack,Lebron,Consumer,United States,1,1,6,2018-12-30,2018,12,30
+JL-15175,James,Lanier,Home Office,United States,1,2,5,2018-12-30,2018,12,30
+JL-15235,Janet,Lee,Consumer,United States,0,1,5,2018-12-30,2018,12,30
+JL-15505,Jeremy,Lonsdale,Consumer,United States,0,2,6,2018-12-30,2018,12,30
+JL-15835,John,Lee,Consumer,United States,1,3,10,2018-12-30,2018,12,30
+JL-15850,John,Lucas,Consumer,United States,0,0,6,2018-12-30,2018,12,30
+JM-15250,Janet,Martin,Consumer,United States,0,3,6,2018-12-30,2018,12,30
+JM-15265,Janet,Molinari,Corporate,United States,0,1,5,2018-12-30,2018,12,30
+JM-15535,Jessica,Myrick,Consumer,United States,0,2,7,2018-12-30,2018,12,30
+JM-15580,Jill,Matthias,Consumer,United States,1,1,5,2018-12-30,2018,12,30
+JM-15655,Jim,Mitchum,Corporate,United States,1,2,5,2018-12-30,2018,12,30
+JM-15865,John,Murray,Consumer,United States,0,1,7,2018-12-30,2018,12,30
+JM-16195,Justin,MacKendrick,Consumer,United States,0,3,10,2018-12-30,2018,12,30
+JO-15145,Jack,O'Briant,Corporate,United States,0,2,9,2018-12-30,2018,12,30
+JO-15280,Jas,O'Carroll,Consumer,United States,0,1,6,2018-12-30,2018,12,30
+JO-15550,Jesus,Ocampo,Home Office,United States,0,0,5,2018-12-30,2018,12,30
+JP-15460,Jennifer,Patt,Corporate,United States,0,1,7,2018-12-30,2018,12,30
+JP-15520,Jeremy,Pistek,Consumer,United States,2,2,7,2018-12-30,2018,12,30
+JP-16135,Julie,Prescott,Home Office,United States,0,1,9,2018-12-30,2018,12,30
+JR-15670,Jim,Radford,Consumer,United States,0,0,2,2018-12-30,2018,12,30
+JR-15700,Jocasta,Rupert,Consumer,United States,0,1,1,2018-12-30,2018,12,30
+JR-16210,Justin,Ritter,Corporate,United States,0,2,5,2018-12-30,2018,12,30
+JS-15595,Jill,Stevenson,Corporate,United States,0,1,4,2018-12-30,2018,12,30
+JS-15685,Jim,Sink,Corporate,United States,0,1,3,2018-12-30,2018,12,30
+JS-15880,John,Stevenson,Consumer,United States,0,0,5,2018-12-30,2018,12,30
+JS-15940,Joni,Sundaresam,Home Office,United States,0,0,5,2018-12-30,2018,12,30
+JS-16030,Joy,Smith,Consumer,United States,1,2,6,2018-12-30,2018,12,30
+JW-15220,Jane,Waco,Corporate,United States,0,4,6,2018-12-30,2018,12,30
+JW-15955,Joni,Wasserman,Consumer,United States,1,3,6,2018-12-30,2018,12,30
+JW-16075,Julia,West,Consumer,United States,0,0,4,2018-12-30,2018,12,30
+KA-16525,Kelly,Andreada,Consumer,United States,0,2,7,2018-12-30,2018,12,30
+KB-16240,Karen,Bern,Corporate,United States,1,3,7,2018-12-30,2018,12,30
+KB-16315,Karl,Braun,Consumer,United States,0,0,9,2018-12-30,2018,12,30
+KB-16405,Katrina,Bavinger,Home Office,United States,0,2,3,2018-12-30,2018,12,30
+KB-16585,Ken,Black,Corporate,United States,0,0,12,2018-12-30,2018,12,30
+KB-16600,Ken,Brennan,Corporate,United States,2,3,7,2018-12-30,2018,12,30
+KC-16255,Karen,Carlisle,Corporate,United States,0,0,6,2018-12-30,2018,12,30
+KC-16540,Kelly,Collister,Consumer,United States,0,1,4,2018-12-30,2018,12,30
+KC-16675,Kimberly,Carter,Corporate,United States,0,1,4,2018-12-30,2018,12,30
+KD-16270,Karen,Daniels,Consumer,United States,0,0,5,2018-12-30,2018,12,30
+KD-16345,Katherine,Ducich,Consumer,United States,0,1,6,2018-12-30,2018,12,30
+KD-16495,Keith,Dawkins,Corporate,United States,0,2,12,2018-12-30,2018,12,30
+KD-16615,Ken,Dana,Corporate,United States,0,0,4,2018-12-30,2018,12,30
+KE-16420,Katrina,Edelman,Corporate,United States,1,2,7,2018-12-30,2018,12,30
+KF-16285,Karen,Ferguson,Home Office,United States,0,3,7,2018-12-30,2018,12,30
+KH-16330,Katharine,Harms,Corporate,United States,0,2,8,2018-12-30,2018,12,30
+KH-16360,Katherine,Hughes,Consumer,United States,1,1,6,2018-12-30,2018,12,30
+KH-16510,Keith,Herrera,Consumer,United States,1,2,6,2018-12-30,2018,12,30
+KH-16630,Ken,Heidel,Corporate,United States,0,4,9,2018-12-30,2018,12,30
+KH-16690,Kristen,Hastings,Corporate,United States,1,1,7,2018-12-30,2018,12,30
+KL-16555,Kelly,Lampkin,Corporate,United States,1,3,8,2018-12-30,2018,12,30
+KL-16645,Ken,Lonsdale,Consumer,United States,0,1,12,2018-12-30,2018,12,30
+KM-16225,Kalyca,Meade,Corporate,United States,2,3,6,2018-12-30,2018,12,30
+KM-16375,Katherine,Murray,Home Office,United States,0,1,8,2018-12-30,2018,12,30
+KM-16660,Khloe,Miller,Consumer,United States,1,1,5,2018-12-30,2018,12,30
+KM-16720,Kunst,Miller,Consumer,United States,1,1,8,2018-12-30,2018,12,30
+KN-16390,Katherine,Nockton,Corporate,United States,1,3,8,2018-12-30,2018,12,30
+KN-16450,Kean,Nguyen,Corporate,United States,0,1,5,2018-12-30,2018,12,30
+KN-16705,Kristina,Nunn,Home Office,United States,0,2,7,2018-12-30,2018,12,30
+KS-16300,Karen,Seio,Corporate,United States,0,0,3,2018-12-30,2018,12,30
+KT-16465,Kean,Takahito,Consumer,United States,0,0,7,2018-12-30,2018,12,30
+KT-16480,Kean,Thornton,Consumer,United States,0,2,10,2018-12-30,2018,12,30
+KW-16435,Katrina,Willman,Consumer,United States,0,2,5,2018-12-30,2018,12,30
+KW-16570,Kelly,Williams,Consumer,United States,0,0,4,2018-12-30,2018,12,30
+LA-16780,Laura,Armstrong,Corporate,United States,0,1,11,2018-12-30,2018,12,30
+LB-16735,Larry,Blacks,Consumer,United States,0,1,3,2018-12-30,2018,12,30
+LB-16795,Laurel,Beltran,Home Office,United States,0,1,8,2018-12-30,2018,12,30
+LC-16870,Lena,Cacioppo,Consumer,United States,1,2,8,2018-12-30,2018,12,30
+LC-16885,Lena,Creighton,Consumer,United States,1,2,12,2018-12-30,2018,12,30
+LC-16930,Linda,Cazamias,Corporate,United States,0,2,8,2018-12-30,2018,12,30
+LC-16960,Lindsay,Castell,Home Office,United States,0,0,4,2018-12-30,2018,12,30
+LC-17050,Liz,Carlisle,Consumer,United States,0,2,5,2018-12-30,2018,12,30
+LC-17140,Logan,Currie,Consumer,United States,2,4,9,2018-12-30,2018,12,30
+LD-16855,Lela,Donovan,Corporate,United States,0,0,1,2018-12-30,2018,12,30
+LD-17005,Lisa,DeCherney,Consumer,United States,0,0,4,2018-12-30,2018,12,30
+LE-16810,Laurel,Elliston,Consumer,United States,1,1,6,2018-12-30,2018,12,30
+LF-17185,Luke,Foster,Consumer,United States,1,1,7,2018-12-30,2018,12,30
+LH-16750,Larry,Hughes,Consumer,United States,0,1,3,2018-12-30,2018,12,30
+LH-16900,Lena,Hernandez,Consumer,United States,1,2,9,2018-12-30,2018,12,30
+LH-17020,Lisa,Hazard,Consumer,United States,0,0,4,2018-12-30,2018,12,30
+LH-17155,Logan,Haushalter,Consumer,United States,0,0,9,2018-12-30,2018,12,30
+LL-16840,Lauren,Leatherbury,Consumer,United States,0,0,5,2018-12-30,2018,12,30
+LM-17065,Liz,MacKendrick,Consumer,United States,0,0,5,2018-12-30,2018,12,30
+LO-17170,Lori,Olson,Corporate,United States,1,2,5,2018-12-30,2018,12,30
+LP-17080,Liz,Pelletier,Consumer,United States,0,1,4,2018-12-30,2018,12,30
+LP-17095,Liz,Preis,Consumer,United States,1,2,6,2018-12-30,2018,12,30
+LR-16915,Lena,Radford,Consumer,United States,1,1,6,2018-12-30,2018,12,30
+LR-17035,Lisa,Ryan,Corporate,United States,0,2,5,2018-12-30,2018,12,30
+LS-16945,Linda,Southworth,Corporate,United States,0,1,6,2018-12-30,2018,12,30
+LS-16975,Lindsay,Shagiari,Home Office,United States,1,3,9,2018-12-30,2018,12,30
+LS-17200,Luke,Schmidt,Corporate,United States,0,2,6,2018-12-30,2018,12,30
+LS-17230,Lycoris,Saunders,Consumer,United States,0,0,3,2018-12-30,2018,12,30
+LS-17245,Lynn,Smith,Consumer,United States,0,1,6,2018-12-30,2018,12,30
+LT-16765,Larry,Tron,Consumer,United States,1,1,3,2018-12-30,2018,12,30
+LT-17110,Liz,Thompson,Consumer,United States,0,2,8,2018-12-30,2018,12,30
+LW-16825,Laurel,Workman,Corporate,United States,0,1,5,2018-12-30,2018,12,30
+LW-16990,Lindsay,Williams,Corporate,United States,0,2,6,2018-12-30,2018,12,30
+LW-17125,Liz,Willingham,Consumer,United States,0,0,3,2018-12-30,2018,12,30
+LW-17215,Luke,Weiss,Consumer,United States,1,2,7,2018-12-30,2018,12,30
+MA-17560,Matt,Abelman,Home Office,United States,0,3,11,2018-12-30,2018,12,30
+MA-17995,Michelle,Arnett,Home Office,United States,0,0,6,2018-12-30,2018,12,30
+MB-17305,Maria,Bertelson,Consumer,United States,0,3,10,2018-12-30,2018,12,30
+MB-18085,Mick,Brown,Consumer,United States,0,1,7,2018-12-30,2018,12,30
+MC-17275,Marc,Crier,Consumer,United States,0,1,8,2018-12-30,2018,12,30
+MC-17425,Mark,Cousins,Corporate,United States,0,0,5,2018-12-30,2018,12,30
+MC-17575,Matt,Collins,Consumer,United States,1,2,8,2018-12-30,2018,12,30
+MC-17590,Matt,Collister,Corporate,United States,0,1,6,2018-12-30,2018,12,30
+MC-17605,Matt,Connell,Corporate,United States,0,1,8,2018-12-30,2018,12,30
+MC-17635,Matthew,Clasen,Corporate,United States,0,0,4,2018-12-30,2018,12,30
+MC-17845,Michael,Chen,Consumer,United States,2,3,7,2018-12-30,2018,12,30
+MC-18100,Mick,Crebagga,Consumer,United States,0,3,10,2018-12-30,2018,12,30
+MC-18130,Mike,Caudle,Corporate,United States,0,0,5,2018-12-30,2018,12,30
+MD-17350,Maribeth,Dona,Consumer,United States,0,1,6,2018-12-30,2018,12,30
+MD-17860,Michael,Dominguez,Corporate,United States,0,3,5,2018-12-30,2018,12,30
+ME-17320,Maria,Etezadi,Home Office,United States,0,3,10,2018-12-30,2018,12,30
+ME-17725,Max,Engle,Consumer,United States,2,2,8,2018-12-30,2018,12,30
+ME-18010,Michelle,Ellison,Corporate,United States,0,1,4,2018-12-30,2018,12,30
+MF-17665,Maureen,Fritzler,Corporate,United States,0,0,5,2018-12-30,2018,12,30
+MF-18250,Monica,Federle,Corporate,United States,1,1,5,2018-12-30,2018,12,30
+MG-17650,Matthew,Grinstein,Home Office,United States,1,3,7,2018-12-30,2018,12,30
+MG-17680,Maureen,Gastineau,Home Office,United States,0,1,4,2018-12-30,2018,12,30
+MG-17695,Maureen,Gnade,Consumer,United States,0,0,3,2018-12-30,2018,12,30
+MG-17875,Michael,Grace,Home Office,United States,0,1,5,2018-12-30,2018,12,30
+MG-17890,Michael,Granlund,Home Office,United States,0,2,9,2018-12-30,2018,12,30
+MG-18145,Mike,Gockenbach,Consumer,United States,0,2,4,2018-12-30,2018,12,30
+MG-18205,Mitch,Gastineau,Corporate,United States,0,0,1,2018-12-30,2018,12,30
+MH-17290,Marc,Harrigan,Home Office,United States,0,0,5,2018-12-30,2018,12,30
+MH-17440,Mark,Haberlin,Corporate,United States,0,0,4,2018-12-30,2018,12,30
+MH-17455,Mark,Hamilton,Consumer,United States,0,1,7,2018-12-30,2018,12,30
+MH-17620,Matt,Hagelstein,Corporate,United States,0,1,4,2018-12-30,2018,12,30
+MH-17785,Maya,Herman,Corporate,United States,0,1,7,2018-12-30,2018,12,30
+MH-18025,Michelle,Huthwaite,Consumer,United States,0,2,5,2018-12-30,2018,12,30
+MH-18115,Mick,Hernandez,Home Office,United States,1,3,9,2018-12-30,2018,12,30
+MJ-17740,Max,Jones,Consumer,United States,1,1,7,2018-12-30,2018,12,30
+MK-17905,Michael,Kennedy,Corporate,United States,1,2,8,2018-12-30,2018,12,30
+MK-18160,Mike,Kennedy,Consumer,United States,0,0,4,2018-12-30,2018,12,30
+ML-17395,Marina,Lichtenstein,Corporate,United States,0,1,9,2018-12-30,2018,12,30
+ML-17410,Maris,LaWare,Consumer,United States,0,2,5,2018-12-30,2018,12,30
+ML-17755,Max,Ludwig,Home Office,United States,2,3,7,2018-12-30,2018,12,30
+ML-18040,Michelle,Lonsdale,Corporate,United States,0,1,3,2018-12-30,2018,12,30
+ML-18265,Muhammed,Lee,Consumer,United States,0,1,2,2018-12-30,2018,12,30
+MM-17260,Magdelene,Morse,Consumer,United States,0,1,4,2018-12-30,2018,12,30
+MM-17920,Michael,Moore,Consumer,United States,2,3,10,2018-12-30,2018,12,30
+MM-18055,Michelle,Moray,Consumer,United States,0,3,8,2018-12-30,2018,12,30
+MM-18280,Muhammed,MacIntyre,Corporate,United States,0,2,9,2018-12-30,2018,12,30
+MN-17935,Michael,Nguyen,Consumer,United States,0,2,6,2018-12-30,2018,12,30
+MO-17500,Mary,O'Rourke,Consumer,United States,0,1,4,2018-12-30,2018,12,30
+MO-17800,Meg,O'Connel,Home Office,United States,0,2,8,2018-12-30,2018,12,30
+MO-17950,Michael,Oakman,Consumer,United States,0,1,2,2018-12-30,2018,12,30
+MP-17470,Mark,Packer,Home Office,United States,0,0,6,2018-12-30,2018,12,30
+MP-17965,Michael,Paige,Corporate,United States,0,2,9,2018-12-30,2018,12,30
+MP-18175,Mike,Pelletier,Home Office,United States,1,2,8,2018-12-30,2018,12,30
+MR-17545,Mathew,Reese,Home Office,United States,0,2,4,2018-12-30,2018,12,30
+MS-17365,Maribeth,Schnelling,Consumer,United States,0,0,10,2018-12-30,2018,12,30
+MS-17530,MaryBeth,Skach,Consumer,United States,0,0,4,2018-12-30,2018,12,30
+MS-17710,Maurice,Satty,Consumer,United States,0,0,6,2018-12-30,2018,12,30
+MS-17770,Maxwell,Schwartz,Consumer,United States,0,1,9,2018-12-30,2018,12,30
+MS-17830,Melanie,Seite,Consumer,United States,0,0,4,2018-12-30,2018,12,30
+MS-17980,Michael,Stewart,Corporate,United States,1,1,6,2018-12-30,2018,12,30
+MT-17815,Meg,Tillman,Consumer,United States,0,1,6,2018-12-30,2018,12,30
+MT-18070,Michelle,Tran,Home Office,United States,0,0,4,2018-12-30,2018,12,30
+MV-17485,Mark,Van Huff,Consumer,United States,1,2,9,2018-12-30,2018,12,30
+MV-18190,Mike,Vittorini,Consumer,United States,1,1,7,2018-12-30,2018,12,30
+MW-18220,Mitch,Webber,Consumer,United States,1,1,7,2018-12-30,2018,12,30
+MW-18235,Mitch,Willingham,Corporate,United States,0,1,2,2018-12-30,2018,12,30
+MY-17380,Maribeth,Yedwab,Corporate,United States,1,4,7,2018-12-30,2018,12,30
+MY-18295,Muhammed,Yedwab,Corporate,United States,0,2,10,2018-12-30,2018,12,30
+MZ-17335,Maria,Zettner,Home Office,United States,1,1,4,2018-12-30,2018,12,30
+MZ-17515,Mary,Zewe,Corporate,United States,0,0,6,2018-12-30,2018,12,30
+NB-18580,Nicole,Brennan,Corporate,United States,0,0,2,2018-12-30,2018,12,30
+NB-18655,Nona,Balk,Corporate,United States,1,3,9,2018-12-30,2018,12,30
+NC-18340,Nat,Carroll,Consumer,United States,0,0,5,2018-12-30,2018,12,30
+NC-18415,Nathan,Cano,Consumer,United States,0,1,6,2018-12-30,2018,12,30
+NC-18535,Nick,Crebassa,Corporate,United States,2,3,7,2018-12-30,2018,12,30
+NC-18625,Noah,Childs,Corporate,United States,0,0,5,2018-12-30,2018,12,30
+ND-18370,Natalie,DeCherney,Consumer,United States,1,2,9,2018-12-30,2018,12,30
+ND-18460,Neil,Ducich,Corporate,United States,0,1,6,2018-12-30,2018,12,30
+NF-18385,Natalie,Fritzler,Consumer,United States,0,2,6,2018-12-30,2018,12,30
+NF-18475,Neil,Französisch,Home Office,United States,0,0,4,2018-12-30,2018,12,30
+NF-18595,Nicole,Fjeld,Home Office,United States,0,2,7,2018-12-30,2018,12,30
+NG-18355,Nat,Gilpin,Corporate,United States,0,2,5,2018-12-30,2018,12,30
+NG-18430,Nathan,Gelder,Consumer,United States,0,1,5,2018-12-30,2018,12,30
+NH-18610,Nicole,Hansen,Corporate,United States,0,0,6,2018-12-30,2018,12,30
+NK-18490,Neil,Knudson,Home Office,United States,0,3,7,2018-12-30,2018,12,30
+NL-18310,Nancy,Lomonaco,Home Office,United States,0,1,4,2018-12-30,2018,12,30
+NM-18445,Nathan,Mautz,Home Office,United States,0,1,7,2018-12-30,2018,12,30
+NM-18520,Neoma,Murray,Consumer,United States,0,0,10,2018-12-30,2018,12,30
+NP-18325,Naresj,Patel,Consumer,United States,1,1,6,2018-12-30,2018,12,30
+NP-18670,Nora,Paige,Consumer,United States,0,2,5,2018-12-30,2018,12,30
+NP-18685,Nora,Pelletier,Home Office,United States,0,0,5,2018-12-30,2018,12,30
+NP-18700,Nora,Preis,Consumer,United States,0,1,7,2018-12-30,2018,12,30
+NR-18550,Nick,Radford,Consumer,United States,0,0,5,2018-12-30,2018,12,30
+NS-18505,Neola,Schneider,Consumer,United States,1,2,4,2018-12-30,2018,12,30
+NS-18640,Noel,Staavos,Corporate,United States,0,1,12,2018-12-30,2018,12,30
+NW-18400,Natalie,Webber,Consumer,United States,0,1,7,2018-12-30,2018,12,30
+NZ-18565,Nick,Zandusky,Home Office,United States,0,2,9,2018-12-30,2018,12,30
+ON-18715,Odella,Nelson,Corporate,United States,0,0,9,2018-12-30,2018,12,30
+OT-18730,Olvera,Toch,Consumer,United States,0,1,5,2018-12-30,2018,12,30
+PA-19060,Pete,Armstrong,Home Office,United States,0,1,6,2018-12-30,2018,12,30
+PB-18805,Patrick,Bzostek,Home Office,United States,1,1,3,2018-12-30,2018,12,30
+PB-19105,Peter,Bühler,Consumer,United States,0,2,4,2018-12-30,2018,12,30
+PB-19150,Philip,Brown,Consumer,United States,0,1,8,2018-12-30,2018,12,30
+PB-19210,Phillip,Breyer,Corporate,United States,0,0,2,2018-12-30,2018,12,30
+PC-18745,Pamela,Coakley,Corporate,United States,1,1,4,2018-12-30,2018,12,30
+PC-19000,Pauline,Chand,Home Office,United States,0,0,2,2018-12-30,2018,12,30
+PF-19120,Peter,Fuller,Consumer,United States,0,0,4,2018-12-30,2018,12,30
+PF-19165,Philip,Fox,Consumer,United States,0,0,6,2018-12-30,2018,12,30
+PF-19225,Phillip,Flathmann,Consumer,United States,0,2,5,2018-12-30,2018,12,30
+PG-18820,Patrick,Gardner,Consumer,United States,0,3,13,2018-12-30,2018,12,30
+PG-18895,Paul,Gonzalez,Consumer,United States,0,2,9,2018-12-30,2018,12,30
+PH-18790,Patricia,Hirasaki,Home Office,United States,0,1,1,2018-12-30,2018,12,30
+PJ-18835,Patrick,Jones,Corporate,United States,0,2,8,2018-12-30,2018,12,30
+PJ-19015,Pauline,Johnson,Consumer,United States,0,1,6,2018-12-30,2018,12,30
+PK-18910,Paul,Knutson,Home Office,United States,0,0,2,2018-12-30,2018,12,30
+PK-19075,Pete,Kriz,Consumer,United States,1,4,12,2018-12-30,2018,12,30
+PL-18925,Paul,Lucas,Home Office,United States,1,1,5,2018-12-30,2018,12,30
+PM-18940,Paul,MacIntyre,Consumer,United States,0,0,3,2018-12-30,2018,12,30
+PM-19135,Peter,McVee,Home Office,United States,0,1,4,2018-12-30,2018,12,30
+PN-18775,Parhena,Norris,Home Office,United States,1,2,8,2018-12-30,2018,12,30
+PO-18850,Patrick,O'Brill,Consumer,United States,1,5,11,2018-12-30,2018,12,30
+PO-18865,Patrick,O'Donnell,Consumer,United States,2,3,7,2018-12-30,2018,12,30
+PO-19180,Philisse,Overcash,Home Office,United States,0,1,9,2018-12-30,2018,12,30
+PO-19195,Phillina,Ober,Home Office,United States,0,1,5,2018-12-30,2018,12,30
+PP-18955,Paul,Prost,Home Office,United States,0,1,10,2018-12-30,2018,12,30
+PR-18880,Patrick,Ryan,Consumer,United States,0,2,5,2018-12-30,2018,12,30
+PS-18760,Pamela,Stobb,Consumer,United States,0,1,6,2018-12-30,2018,12,30
+PS-18970,Paul,Stevenson,Home Office,United States,0,2,8,2018-12-30,2018,12,30
+PS-19045,Penelope,Sewall,Home Office,United States,0,0,7,2018-12-30,2018,12,30
+PT-19090,Pete,Takahito,Consumer,United States,0,1,3,2018-12-30,2018,12,30
+PV-18985,Paul,Van Hugh,Home Office,United States,0,1,5,2018-12-30,2018,12,30
+PW-19030,Pauline,Webber,Corporate,United States,0,2,10,2018-12-30,2018,12,30
+PW-19240,Pierre,Wener,Consumer,United States,0,0,7,2018-12-30,2018,12,30
+QJ-19255,Quincy,Jones,Corporate,United States,1,1,9,2018-12-30,2018,12,30
+RA-19285,Ralph,Arnett,Consumer,United States,2,4,9,2018-12-30,2018,12,30
+RA-19885,Ruben,Ausman,Corporate,United States,0,2,6,2018-12-30,2018,12,30
+RA-19915,Russell,Applegate,Consumer,United States,1,2,9,2018-12-30,2018,12,30
+RA-19945,Ryan,Akin,Consumer,United States,0,1,5,2018-12-30,2018,12,30
+RB-19330,Randy,Bradley,Consumer,United States,0,1,2,2018-12-30,2018,12,30
+RB-19360,Raymond,Buch,Consumer,United States,0,2,6,2018-12-30,2018,12,30
+RB-19435,Richard,Bierner,Consumer,United States,0,1,7,2018-12-30,2018,12,30
+RB-19465,Rick,Bensley,Home Office,United States,2,3,12,2018-12-30,2018,12,30
+RB-19570,Rob,Beeghly,Consumer,United States,1,1,5,2018-12-30,2018,12,30
+RB-19645,Robert,Barroso,Corporate,United States,0,0,5,2018-12-30,2018,12,30
+RB-19705,Roger,Barcio,Home Office,United States,0,2,4,2018-12-30,2018,12,30
+RB-19795,Ross,Baird,Home Office,United States,0,2,8,2018-12-30,2018,12,30
+RC-19825,Roy,Collins,Consumer,United States,0,0,6,2018-12-30,2018,12,30
+RC-19960,Ryan,Crowe,Consumer,United States,0,1,4,2018-12-30,2018,12,30
+RD-19480,Rick,Duston,Consumer,United States,0,2,8,2018-12-30,2018,12,30
+RD-19585,Rob,Dowd,Consumer,United States,0,2,9,2018-12-30,2018,12,30
+RD-19660,Robert,Dilbeck,Home Office,United States,0,1,4,2018-12-30,2018,12,30
+RD-19720,Roger,Demir,Consumer,United States,1,1,10,2018-12-30,2018,12,30
+RD-19810,Ross,DeVincentis,Home Office,United States,1,2,8,2018-12-30,2018,12,30
+RD-19900,Ruben,Dartt,Consumer,United States,0,1,9,2018-12-30,2018,12,30
+RD-19930,Russell,D'Ascenzo,Consumer,United States,0,1,4,2018-12-30,2018,12,30
+RE-19405,Ricardo,Emerson,Consumer,United States,0,0,1,2018-12-30,2018,12,30
+RE-19450,Richard,Eichhorn,Consumer,United States,0,0,4,2018-12-30,2018,12,30
+RF-19345,Randy,Ferguson,Corporate,United States,0,0,8,2018-12-30,2018,12,30
+RF-19735,Roland,Fjeld,Consumer,United States,0,2,7,2018-12-30,2018,12,30
+RF-19840,Roy,Französisch,Consumer,United States,1,1,7,2018-12-30,2018,12,30
+RH-19495,Rick,Hansen,Consumer,United States,0,3,5,2018-12-30,2018,12,30
+RH-19510,Rick,Huthwaite,Home Office,United States,0,0,6,2018-12-30,2018,12,30
+RH-19555,Ritsa,Hightower,Consumer,United States,0,0,2,2018-12-30,2018,12,30
+RH-19600,Rob,Haberlin,Consumer,United States,0,0,3,2018-12-30,2018,12,30
+RK-19300,Ralph,Kennedy,Consumer,United States,0,1,3,2018-12-30,2018,12,30
+RL-19615,Rob,Lucas,Consumer,United States,0,2,8,2018-12-30,2018,12,30
+RM-19375,Raymond,Messe,Consumer,United States,0,0,6,2018-12-30,2018,12,30
+RM-19675,Robert,Marley,Home Office,United States,1,1,5,2018-12-30,2018,12,30
+RM-19750,Roland,Murray,Consumer,United States,0,0,1,2018-12-30,2018,12,30
+RO-19780,Rose,O'Brian,Consumer,United States,0,2,7,2018-12-30,2018,12,30
+RP-19270,Rachel,Payne,Corporate,United States,0,0,4,2018-12-30,2018,12,30
+RP-19390,Resi,Pölking,Consumer,United States,0,1,12,2018-12-30,2018,12,30
+RP-19855,Roy,Phan,Corporate,United States,1,1,7,2018-12-30,2018,12,30
+RR-19315,Ralph,Ritter,Consumer,United States,1,1,2,2018-12-30,2018,12,30
+RR-19525,Rick,Reed,Corporate,United States,0,1,6,2018-12-30,2018,12,30
+RS-19420,Ricardo,Sperren,Corporate,United States,0,2,5,2018-12-30,2018,12,30
+RS-19765,Roland,Schwarz,Corporate,United States,0,3,8,2018-12-30,2018,12,30
+RS-19870,Roy,Skaria,Home Office,United States,1,1,2,2018-12-30,2018,12,30
+RW-19540,Rick,Wilson,Corporate,United States,0,3,7,2018-12-30,2018,12,30
+RW-19630,Rob,Williams,Corporate,United States,0,1,9,2018-12-30,2018,12,30
+RW-19690,Robert,Waldorf,Consumer,United States,0,2,5,2018-12-30,2018,12,30
+SA-20830,Sue,Ann Reed,Consumer,United States,0,1,10,2018-12-30,2018,12,30
+SB-20170,Sarah,Bern,Consumer,United States,0,0,3,2018-12-30,2018,12,30
+SB-20185,Sarah,Brown,Consumer,United States,0,0,6,2018-12-30,2018,12,30
+SB-20290,Sean,Braxton,Corporate,United States,0,2,7,2018-12-30,2018,12,30
+SC-20020,Sam,Craven,Consumer,United States,0,0,5,2018-12-30,2018,12,30
+SC-20050,Sample,Company A,Home Office,United States,0,3,9,2018-12-30,2018,12,30
+SC-20095,Sanjit,Chand,Consumer,United States,0,0,9,2018-12-30,2018,12,30
+SC-20230,Scot,Coram,Corporate,United States,0,1,4,2018-12-30,2018,12,30
+SC-20260,Scott,Cohen,Corporate,United States,0,0,8,2018-12-30,2018,12,30
+SC-20305,Sean,Christensen,Consumer,United States,1,2,6,2018-12-30,2018,12,30
+SC-20380,Shahid,Collister,Consumer,United States,1,2,9,2018-12-30,2018,12,30
+SC-20440,Shaun,Chance,Corporate,United States,0,3,7,2018-12-30,2018,12,30
+SC-20575,Sonia,Cooley,Consumer,United States,0,2,4,2018-12-30,2018,12,30
+SC-20680,Steve,Carroll,Home Office,United States,0,1,6,2018-12-30,2018,12,30
+SC-20695,Steve,Chapman,Corporate,United States,0,2,10,2018-12-30,2018,12,30
+SC-20725,Steven,Cartwright,Consumer,United States,0,0,11,2018-12-30,2018,12,30
+SC-20770,Stewart,Carmichael,Corporate,United States,0,1,7,2018-12-30,2018,12,30
+SC-20800,Stuart,Calhoun,Consumer,United States,1,1,4,2018-12-30,2018,12,30
+SC-20845,Sung,Chung,Consumer,United States,0,0,1,2018-12-30,2018,12,30
+SD-20485,Shirley,Daniels,Home Office,United States,0,0,9,2018-12-30,2018,12,30
+SE-20110,Sanjit,Engle,Consumer,United States,1,3,11,2018-12-30,2018,12,30
+SF-20065,Sandra,Flanagan,Consumer,United States,0,2,7,2018-12-30,2018,12,30
+SF-20200,Sarah,Foster,Consumer,United States,0,3,9,2018-12-30,2018,12,30
+SF-20965,Sylvia,Foulston,Corporate,United States,0,3,9,2018-12-30,2018,12,30
+SG-20080,Sandra,Glassco,Consumer,United States,1,1,3,2018-12-30,2018,12,30
+SG-20470,Sheri,Gordon,Consumer,United States,0,1,8,2018-12-30,2018,12,30
+SG-20605,Speros,Goranitis,Consumer,United States,0,1,5,2018-12-30,2018,12,30
+SG-20890,Susan,Gilcrest,Corporate,United States,0,0,3,2018-12-30,2018,12,30
+SH-19975,Sally,Hughsby,Corporate,United States,1,4,12,2018-12-30,2018,12,30
+SH-20395,Shahid,Hopkins,Consumer,United States,1,3,10,2018-12-30,2018,12,30
+SH-20635,Stefanie,Holloman,Corporate,United States,0,0,2,2018-12-30,2018,12,30
+SJ-20125,Sanjit,Jacobs,Home Office,United States,0,3,12,2018-12-30,2018,12,30
+SJ-20215,Sarah,Jordon,Consumer,United States,1,2,6,2018-12-30,2018,12,30
+SJ-20500,Shirley,Jackson,Consumer,United States,0,0,5,2018-12-30,2018,12,30
+SK-19990,Sally,Knutson,Consumer,United States,1,1,3,2018-12-30,2018,12,30
+SL-20155,Sara,Luxemburg,Home Office,United States,0,2,6,2018-12-30,2018,12,30
+SM-20005,Sally,Matthias,Consumer,United States,0,0,4,2018-12-30,2018,12,30
+SM-20320,Sean,Miller,Home Office,United States,0,2,5,2018-12-30,2018,12,30
+SM-20905,Susan,MacKendrick,Consumer,United States,0,0,1,2018-12-30,2018,12,30
+SM-20950,Suzanne,McNair,Corporate,United States,1,2,11,2018-12-30,2018,12,30
+SN-20560,Skye,Norling,Home Office,United States,0,1,6,2018-12-30,2018,12,30
+SN-20710,Steve,Nguyen,Home Office,United States,0,1,7,2018-12-30,2018,12,30
+SO-20335,Sean,O'Donnell,Consumer,United States,1,2,6,2018-12-30,2018,12,30
+SP-20545,Sibella,Parks,Corporate,United States,0,0,6,2018-12-30,2018,12,30
+SP-20620,Stefania,Perrino,Corporate,United States,0,4,9,2018-12-30,2018,12,30
+SP-20650,Stephanie,Phelps,Corporate,United States,0,0,9,2018-12-30,2018,12,30
+SP-20860,Sung,Pak,Corporate,United States,0,2,10,2018-12-30,2018,12,30
+SP-20920,Susan,Pistek,Consumer,United States,0,1,6,2018-12-30,2018,12,30
+SR-20425,Sharelle,Roach,Home Office,United States,1,3,5,2018-12-30,2018,12,30
+SR-20740,Steven,Roelle,Home Office,United States,0,0,8,2018-12-30,2018,12,30
+SS-20140,Saphhira,Shifley,Corporate,United States,1,3,8,2018-12-30,2018,12,30
+SS-20410,Shahid,Shariari,Consumer,United States,0,2,6,2018-12-30,2018,12,30
+SS-20515,Shirley,Schmidt,Home Office,United States,0,0,3,2018-12-30,2018,12,30
+SS-20590,Sonia,Sunley,Consumer,United States,0,0,6,2018-12-30,2018,12,30
+SS-20875,Sung,Shariari,Consumer,United States,0,1,5,2018-12-30,2018,12,30
+ST-20530,Shui,Tom,Consumer,United States,0,1,7,2018-12-30,2018,12,30
+SU-20665,Stephanie,Ulpright,Home Office,United States,1,2,7,2018-12-30,2018,12,30
+SV-20365,Seth,Vernon,Consumer,United States,0,4,10,2018-12-30,2018,12,30
+SV-20785,Stewart,Visinsky,Consumer,United States,0,0,9,2018-12-30,2018,12,30
+SV-20815,Stuart,Van,Corporate,United States,0,1,4,2018-12-30,2018,12,30
+SV-20935,Susan,Vittorini,Consumer,United States,3,4,8,2018-12-30,2018,12,30
+SW-20245,Scot,Wooten,Consumer,United States,0,1,7,2018-12-30,2018,12,30
+SW-20275,Scott,Williamson,Consumer,United States,1,3,6,2018-12-30,2018,12,30
+SW-20350,Sean,Wendt,Home Office,United States,0,1,3,2018-12-30,2018,12,30
+SW-20455,Shaun,Weien,Consumer,United States,0,2,6,2018-12-30,2018,12,30
+SW-20755,Steven,Ward,Corporate,United States,0,0,2,2018-12-30,2018,12,30
+SZ-20035,Sam,Zeldin,Home Office,United States,0,4,11,2018-12-30,2018,12,30
+TA-21385,Tom,Ashbrook,Home Office,United States,0,1,4,2018-12-30,2018,12,30
+TB-21055,Ted,Butterfield,Consumer,United States,0,1,4,2018-12-30,2018,12,30
+TB-21175,Thomas,Boland,Corporate,United States,0,1,4,2018-12-30,2018,12,30
+TB-21190,Thomas,Brumley,Home Office,United States,0,2,4,2018-12-30,2018,12,30
+TB-21250,Tim,Brockman,Consumer,United States,0,0,7,2018-12-30,2018,12,30
+TB-21280,Toby,Braunhardt,Consumer,United States,0,0,6,2018-12-30,2018,12,30
+TB-21355,Todd,Boyes,Corporate,United States,0,1,5,2018-12-30,2018,12,30
+TB-21400,Tom,Boeckenhauer,Consumer,United States,0,0,6,2018-12-30,2018,12,30
+TB-21520,Tracy,Blumstein,Consumer,United States,0,2,9,2018-12-30,2018,12,30
+TB-21595,Troy,Blackwell,Consumer,United States,0,0,4,2018-12-30,2018,12,30
+TB-21625,Trudy,Brown,Consumer,United States,1,2,9,2018-12-30,2018,12,30
+TC-20980,Tamara,Chand,Corporate,United States,0,0,5,2018-12-30,2018,12,30
+TC-21145,Theresa,Coyne,Corporate,United States,0,1,1,2018-12-30,2018,12,30
+TC-21295,Toby,Carlisle,Consumer,United States,1,4,8,2018-12-30,2018,12,30
+TC-21475,Tony,Chapman,Home Office,United States,0,1,9,2018-12-30,2018,12,30
+TC-21535,Tracy,Collins,Home Office,United States,2,2,7,2018-12-30,2018,12,30
+TD-20995,Tamara,Dahlen,Consumer,United States,0,4,9,2018-12-30,2018,12,30
+TG-21310,Toby,Gnade,Consumer,United States,0,0,5,2018-12-30,2018,12,30
+TG-21640,Trudy,Glocke,Consumer,United States,0,1,4,2018-12-30,2018,12,30
+TH-21100,Thea,Hendricks,Consumer,United States,0,0,5,2018-12-30,2018,12,30
+TH-21115,Thea,Hudgings,Corporate,United States,0,1,4,2018-12-30,2018,12,30
+TH-21235,Tiffany,House,Corporate,United States,0,1,8,2018-12-30,2018,12,30
+TH-21550,Tracy,Hopkins,Home Office,United States,0,2,7,2018-12-30,2018,12,30
+TM-21010,Tamara,Manning,Consumer,United States,0,1,7,2018-12-30,2018,12,30
+TM-21490,Tony,Molinari,Consumer,United States,0,2,3,2018-12-30,2018,12,30
+TN-21040,Tanja,Norvell,Home Office,United States,0,1,7,2018-12-30,2018,12,30
+TP-21130,Theone,Pippenger,Consumer,United States,2,2,9,2018-12-30,2018,12,30
+TP-21415,Tom,Prescott,Consumer,United States,0,2,5,2018-12-30,2018,12,30
+TP-21565,Tracy,Poddar,Corporate,United States,0,0,4,2018-12-30,2018,12,30
+TR-21325,Toby,Ritter,Consumer,United States,0,0,5,2018-12-30,2018,12,30
+TS-21085,Thais,Sissman,Consumer,United States,0,0,2,2018-12-30,2018,12,30
+TS-21160,Theresa,Swint,Corporate,United States,0,0,6,2018-12-30,2018,12,30
+TS-21205,Thomas,Seio,Corporate,United States,0,0,7,2018-12-30,2018,12,30
+TS-21340,Toby,Swindell,Consumer,United States,0,0,5,2018-12-30,2018,12,30
+TS-21370,Todd,Sumrall,Corporate,United States,0,2,6,2018-12-30,2018,12,30
+TS-21430,Tom,Stivers,Corporate,United States,0,1,5,2018-12-30,2018,12,30
+TS-21505,Tony,Sayre,Consumer,United States,1,4,6,2018-12-30,2018,12,30
+TS-21610,Troy,Staebel,Consumer,United States,0,2,7,2018-12-30,2018,12,30
+TS-21655,Trudy,Schmidt,Consumer,United States,0,0,5,2018-12-30,2018,12,30
+TT-21070,Ted,Trevino,Consumer,United States,0,2,7,2018-12-30,2018,12,30
+TT-21220,Thomas,Thornton,Consumer,United States,0,1,8,2018-12-30,2018,12,30
+TT-21265,Tim,Taslimi,Corporate,United States,0,0,3,2018-12-30,2018,12,30
+TT-21460,Tonja,Turnell,Home Office,United States,1,3,7,2018-12-30,2018,12,30
+TW-21025,Tamara,Willingham,Home Office,United States,0,2,7,2018-12-30,2018,12,30
+TZ-21580,Tracy,Zic,Consumer,United States,0,1,4,2018-12-30,2018,12,30
+VB-21745,Victoria,Brennan,Corporate,United States,0,1,6,2018-12-30,2018,12,30
+VD-21670,Valerie,Dominguez,Consumer,United States,0,0,6,2018-12-30,2018,12,30
+VF-21715,Vicky,Freymann,Home Office,United States,1,2,5,2018-12-30,2018,12,30
+VG-21790,Vivek,Gonzalez,Consumer,United States,0,2,6,2018-12-30,2018,12,30
+VG-21805,Vivek,Grady,Corporate,United States,0,0,4,2018-12-30,2018,12,30
+VM-21685,Valerie,Mitchum,Home Office,United States,0,2,7,2018-12-30,2018,12,30
+VM-21835,Vivian,Mathis,Consumer,United States,0,1,5,2018-12-30,2018,12,30
+VP-21730,Victor,Preis,Home Office,United States,1,2,3,2018-12-30,2018,12,30
+VP-21760,Victoria,Pisteka,Corporate,United States,0,1,7,2018-12-30,2018,12,30
+VS-21820,Vivek,Sundaresam,Consumer,United States,0,0,4,2018-12-30,2018,12,30
+VT-21700,Valerie,Takahito,Home Office,United States,0,0,2,2018-12-30,2018,12,30
+VW-21775,Victoria,Wilson,Corporate,United States,1,2,10,2018-12-30,2018,12,30
+WB-21850,William,Brown,Consumer,United States,1,2,10,2018-12-30,2018,12,30
+XP-21865,Xylona,Preis,Consumer,United States,0,4,11,2018-12-30,2018,12,30
+YC-21895,Yoseph,Carroll,Corporate,United States,1,1,5,2018-12-30,2018,12,30
+YS-21880,Yana,Sorensen,Corporate,United States,1,3,8,2018-12-30,2018,12,30
+ZC-21910,Zuschuss,Carroll,Consumer,United States,0,1,13,2018-12-30,2018,12,30
+ZD-21925,Zuschuss,Donatelli,Consumer,United States,0,0,5,2018-12-30,2018,12,30

@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+
+# Local/generated data
+data-engineer-technical-assignment.pdf
+data/output/
+_SUCCESS
+*.crc
+spark-warehouse/
+metastore_db/
+derby.log
+*.log

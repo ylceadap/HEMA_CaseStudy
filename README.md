@@ -83,7 +83,8 @@ Main actions:
 
 - reads the source CSV;
 - normalizes all column names to lower snake_case;
-- parses `order_date` and `ship_date`;
+- preserves original date values in `_raw_order_date` and `_raw_ship_date`;
+- parses `order_date` and `ship_date` into Spark date columns;
 - preserves all source attributes, including newly added columns;
 - adds lineage fields:
   - `_ingestion_timestamp`
@@ -99,7 +100,7 @@ Small example:
 
 ```text
 Input column:  Order Date
-Bronze column: order_date
+Bronze columns: _raw_order_date = "08/11/2017", order_date = 2017-11-08
 
 Input column:  Sub-Category
 Bronze column: sub_category
@@ -248,6 +249,8 @@ customer_last_name = "Van Huff"
 
 Order counts are based on distinct `order_id`, not raw line-item rows. This avoids counting one multi-product order multiple times.
 
+Gold Customer assumes one stable customer identity record per `customer_id`. Before aggregation, it checks that `customer_name`, `segment`, and `country` do not conflict within the same customer.
+
 The rolling windows end at the latest order date in the dataset. For the provided data, the latest order date is:
 
 ```text
@@ -264,6 +267,7 @@ Gold Customer is partitioned by snapshot date rather than order date because a c
 
 Implementation:
 
+- `validate_customer_level_consistency()`
 - `create_gold_customer()`
 
 Gold functions are implemented in [src/core.py](src/core.py).
@@ -344,6 +348,12 @@ python -m pip install -e ".[dev]"
 ```
 
 ## 9. Run Locally
+
+### Processing Assumption
+
+The local implementation treats the provided CSV as a complete snapshot and rebuilds the Bronze, Silver, and Gold outputs using overwrite mode.
+
+In a production daily incremental pipeline, Bronze and Silver would normally use an append or partition-overwrite strategy with idempotent processing. Gold Customer would still require access to the complete Silver history, or an incremental state-management approach, to calculate rolling and all-time order metrics correctly.
 
 Run the full local pipeline:
 

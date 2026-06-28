@@ -87,40 +87,27 @@ Each log line includes `job_name`, `pipeline_run_id`, event-specific context suc
 
 ## CI/CD Design
 
-The CI/CD pipeline is used to test and release changes to the ETL code and workflow configuration. It is separate from the daily data pipeline itself.
+The CI/CD pipeline tests and releases ETL code and workflow configuration. It is separate from the daily data pipeline.
 
-The proposed flow is:
+1. **Code is pushed to GitHub or GitLab**
+   A developer updates an ETL job, for example the Silver validation logic or the Gold Customer aggregation, and pushes the change to the shared repository.
 
-Code is pushed to GitHub or GitLab
-A developer updates one of the ETL jobs, for example the Silver validation logic or the Gold Customer aggregation, and pushes the change to the shared repository.
-AWS CodePipeline starts automatically
-CodePipeline detects the new commit and starts the release process. It coordinates the different CI/CD stages.
+2. **AWS CodePipeline starts the release workflow**
+   CodePipeline detects the new commit and coordinates the build, test, and deployment stages.
 
-AWS CodeBuild tests and packages the code
-CodeBuild installs the project dependencies and runs:
+3. **AWS CodeBuild tests and packages the code**
+   CodeBuild installs dependencies, runs linting, unit tests, PySpark transformation tests, and packages the Glue job scripts. If any test fails, the pipeline stops and the code is not deployed.
 
-linting;
-unit tests;
-PySpark transformation tests;
-packaging of the Glue job scripts.
+4. **The tested version is deployed to Development**
+   The Glue job scripts and related workflow artifacts are released to a development environment. The team verifies job startup, input and output paths, transformations, and downstream contracts.
 
-If any test fails, the pipeline stops and the code is not deployed.
+5. **Manual approval controls production promotion**
+   An authorized reviewer checks the development release and approves promotion to production.
 
-The tested version is deployed to Development
-The Glue job scripts and related workflow artifacts are first released to a development environment.
+6. **The approved version is deployed to Production**
+   The production Glue scripts and operational configuration are updated with the tested and approved version.
 
-This allows the team to check that:
-
-the jobs start correctly;
-the expected input and output paths are used;
-the transformations still produce the correct datasets;
-no existing downstream contract is broken.
-A manual approval is required
-Once the development version has been checked, an authorized team member reviews the release and approves promotion to production.
-The approved version is deployed to Production
-The production Glue job scripts and operational configuration are updated with the tested and approved version.
-
-The CI/CD pipeline therefore controls how code changes are tested and released.
+The CI/CD pipeline controls how code changes are tested and released.
 
 It does not process the daily retail sales data. The daily data workflow is handled separately by:
 

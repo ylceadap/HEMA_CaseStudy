@@ -43,6 +43,7 @@ SNAPSHOT_PARTITION_COLUMNS = ["snapshot_year", "snapshot_month", "snapshot_day"]
 # Gold Sales collapses product-line rows into one row per order, so these fields
 # must not disagree within the same order_id.
 ORDER_LEVEL_COLUMNS = ["order_date", "ship_date", "ship_mode", "city"]
+CUSTOMER_LEVEL_COLUMNS = ["customer_name", "segment", "country"]
 GOLD_SALES_COLUMNS = [
     "order_id",
     "order_date",
@@ -324,7 +325,9 @@ def transform_bronze(df: DataFrame, pipeline_run_id: str) -> DataFrame:
     # Bronze is still close to raw, but parsed dates and lineage columns make it
     # much easier to debug where each row came from.
     with_dates_and_lineage = (
-        normalized.withColumn(
+        normalized.withColumn("_raw_order_date", F.col("order_date"))
+        .withColumn("_raw_ship_date", F.col("ship_date"))
+        .withColumn(
             "order_date",
             F.coalesce(F.to_date(F.col("order_date"), SOURCE_DATE_FORMAT), F.col("order_date").cast("date")),
         )
@@ -518,6 +521,26 @@ def _split_customer_name(name_col):
     return first_name, last_name
 
 
+def validate_customer_level_consistency(df: DataFrame) -> None:
+    """Make sure each customer_id has one stable set of customer attributes."""
+
+    require_columns(df, ["customer_id", *CUSTOMER_LEVEL_COLUMNS])
+    checks = df.groupBy("customer_id").agg(
+        *[
+            F.countDistinct(F.coalesce(F.col(column).cast("string"), F.lit("<null>"))).alias(
+                f"{column}_distinct_count"
+            )
+            for column in CUSTOMER_LEVEL_COLUMNS
+        ]
+    )
+    conflict_filter = " OR ".join([f"{column}_distinct_count > 1" for column in CUSTOMER_LEVEL_COLUMNS])
+    conflicts = checks.filter(conflict_filter)
+    examples = conflicts.limit(10).collect()
+    if examples:
+        customer_ids = ", ".join(str(row["customer_id"]) for row in examples)
+        raise ValueError(f"Conflicting customer-level attributes detected for customer_id(s): {customer_ids}")
+
+
 def create_gold_customer(df: DataFrame) -> DataFrame:
     """Create the Gold Customer snapshot dataset with one row per customer.
 
@@ -527,6 +550,7 @@ def create_gold_customer(df: DataFrame) -> DataFrame:
     """
 
     require_columns(df, ["customer_id", "customer_name", "segment", "country", "order_id", "order_date"])
+    validate_customer_level_consistency(df)
 
     latest_order_date = df.agg(F.max("order_date").alias("latest_order_date")).collect()[0]["latest_order_date"]
     if latest_order_date is None:

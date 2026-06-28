@@ -20,6 +20,8 @@ def test_bronze_normalizes_dates_and_preserves_additive_columns(spark):
 
     assert "new_attribute" in bronze.columns
     assert row["new_attribute"] == "kept"
+    assert row["_raw_order_date"] == "08/11/2017"
+    assert row["_raw_ship_date"] == "11/11/2017"
     assert str(row["order_date"]) == "2017-11-08"
     assert row["order_year"] == 2017
     assert row["_pipeline_run_id"] == "run-1"
@@ -37,4 +39,6 @@ def test_bronze_splits_malformed_order_dates(spark):
 
     assert valid.count() == 1
     assert malformed.count() == 1
-    assert malformed.collect()[0]["_rejection_reason"] == "order_date cannot be parsed"
+    rejected = malformed.collect()[0]
+    assert rejected["_raw_order_date"] == "not-a-date"
+    assert rejected["_rejection_reason"] == "order_date cannot be parsed"

@@ -165,6 +165,8 @@ Validation rules include:
 
 Not every nullable field is rejected. For example, `postal_code` can be null because it is not required for the Gold outputs.
 
+The code is able to handle missing required IDs and duplicated `row_id` values, but the provided dataset is clean for these checks: it has no empty `Row ID`, `Order ID`, `Customer ID`, or `Customer Name`, and it has no duplicated `Row ID`. Therefore, the sample run has `silver_quarantine_rows: 0`.
+
 Implementation:
 
 - `prepare_silver()`

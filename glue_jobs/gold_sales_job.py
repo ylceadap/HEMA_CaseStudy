@@ -53,10 +53,13 @@ def main(argv: list[str] | None = None) -> None:
         # Convert line-item Silver rows into one order-level Gold Sales table.
         silver = read_parquet(spark, args.input_path)
         input_rows = silver.count()
+        logger.info("input_read", input_row_count=input_rows, detected_schema=silver.schema.simpleString())
         gold = create_gold_sales(silver)
         output_rows = gold.count()
+        logger.info("data_transformed", output_row_count=output_rows)
 
         write_parquet(gold, args.output_path, gold_sales_partition_columns())
+        logger.info("output_written", output_path=args.output_path, output_row_count=output_rows)
         if args.catalog_database:
             register_parquet_table_in_catalog(
                 spark,
@@ -66,8 +69,15 @@ def main(argv: list[str] | None = None) -> None:
                 args.output_path,
                 gold_sales_partition_columns(),
             )
+            logger.info("catalog_registered", database=args.catalog_database, table=args.catalog_table)
         if args.csv_output_path:
             write_csv(gold, args.csv_output_path)
+            logger.info(
+                "output_written",
+                output_path=args.csv_output_path,
+                output_row_count=output_rows,
+                format="csv",
+            )
         logger.info(
             "job_end",
             status="succeeded",

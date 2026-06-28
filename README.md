@@ -28,13 +28,13 @@ The proposed production architecture uses AWS managed services around the PySpar
 High-level flow:
 
 ```text
-Source CSV in S3
+Landing CSV in S3
     -> EventBridge Scheduler
     -> Step Functions
     -> Glue Bronze Job
     -> Glue Silver Job
-    -> Glue Gold Sales Job
-    -> Glue Gold Customer Job
+        |-> Glue Gold Sales Job
+        `-> Glue Gold Customer Job
     -> Glue Data Catalog
     -> Lake Formation / Athena / downstream consumers
 ```
@@ -45,7 +45,7 @@ The same transformation logic can also run locally through `scripts/run_local_pi
 
 - **Amazon S3**: stores landing, Bronze, Silver, Gold, and quarantine data.
 - **AWS Glue PySpark Jobs**: run the ETL transformations.
-- **AWS Glue Data Catalog**: exposes output datasets as discoverable external tables.
+- **AWS Glue Data Catalog**: stores external table metadata for selected Parquet outputs.
 - **AWS Lake Formation**: governs access to the cataloged datasets.
 - **Amazon EventBridge Scheduler**: triggers the workflow once per day.
 - **AWS Step Functions**: orchestrates job dependencies.
@@ -54,7 +54,17 @@ The same transformation logic can also run locally through `scripts/run_local_pi
 
 The AWS architecture diagram is included in [Medallion_Architecture.png](Medallion_Architecture.png), with supporting notes in [Medallion_Architecture.md](Medallion_Architecture.md).
 
-## 3. Medallion Architecture
+## 3. Key Design Decisions
+
+I treated the source file as product-line-level data, not order-level data. The same `order_id` can appear on multiple rows when one order contains multiple products, so Gold Sales aggregates to one row per distinct order, and Gold Customer counts distinct `order_id` values instead of raw rows.
+
+I use the latest available `order_date` in Silver as the snapshot date for rolling customer metrics. For this dataset that date is `2018-12-30`, but the code derives it dynamically instead of hardcoding it.
+
+Bronze is permissive toward additive schema changes: if a new column such as `Promotion Code` appears, Bronze normalizes it to `promotion_code` and keeps it. Gold is intentionally more controlled, because downstream users need stable business-facing schemas.
+
+The provided dataset is clean for the main ID and date checks: there are no empty required IDs and no duplicated `Row ID` values. I still included quarantine and deduplication logic so the pipeline can handle those issues when future daily files are less clean.
+
+## 4. Medallion Architecture
 
 This project follows a medallion architecture: each layer has a different responsibility and a different level of trust.
 
@@ -258,7 +268,7 @@ Implementation:
 
 Gold functions are implemented in [src/core.py](src/core.py).
 
-## 4. Files and Folders
+## 5. Files and Folders
 
 - `README.md`: this project guide and reproduction instructions.
 - `Medallion_Architecture.md`: detailed AWS architecture explanation.
@@ -276,7 +286,7 @@ Gold functions are implemented in [src/core.py](src/core.py).
 - `data/processed/`: generated sample outputs from the local pipeline.
 - `data/processed/gold_csv/`: reviewer-friendly CSV copies of Gold outputs.
 
-## 5. Output Locations
+## 6. Output Locations
 
 Parquet is the canonical medallion storage format.
 
@@ -291,7 +301,7 @@ Parquet is the canonical medallion storage format.
 
 Spark `_SUCCESS` files and CRC files are ignored by git.
 
-## 6. Environment Requirements
+## 7. Environment Requirements
 
 Use Python 3.10 or newer.
 
@@ -316,7 +326,7 @@ Check Java:
 java -version
 ```
 
-## 7. Local Setup
+## 8. Local Setup
 
 From the repository root:
 
@@ -333,7 +343,7 @@ If a virtual environment is not needed, install directly:
 python -m pip install -e ".[dev]"
 ```
 
-## 8. Run Locally
+## 9. Run Locally
 
 Run the full local pipeline:
 
@@ -387,7 +397,7 @@ Run static checks:
 python -m ruff check .
 ```
 
-## 9. AWS Glue Job Usage
+## 10. AWS Glue Job Usage
 
 The `glue_jobs/` scripts can be uploaded as AWS Glue PySpark jobs. They use the same logic as the local runner.
 
@@ -396,8 +406,8 @@ Expected job order:
 ```text
 bronze_job.py
   -> silver_job.py
-      -> gold_sales_job.py
-      -> gold_customer_job.py
+      |-> gold_sales_job.py
+      `-> gold_customer_job.py
 ```
 
 Typical Bronze job arguments:
@@ -434,9 +444,13 @@ Typical Gold Customer job arguments:
 --pipeline_run_id 2026-06-28
 ```
 
-## 10. AWS Glue Data Catalog
+## 11. AWS Glue Data Catalog
 
-Catalog registration is optional for local runs. In AWS Glue, pass `--catalog_database` and optionally `--catalog_table` to register an output as an external Parquet table in the AWS Glue Data Catalog.
+Catalog registration is optional. Local execution does not need AWS credentials because it writes local Parquet and CSV outputs only.
+
+In AWS, S3 stores the actual data files, while the AWS Glue Data Catalog stores table metadata such as schema, location, and partitions. Lake Formation can then govern access to those cataloged tables, and Athena can query them.
+
+In AWS Glue jobs, pass `--catalog_database` and optionally `--catalog_table` to create an external Parquet table entry for an output.
 
 Example:
 
@@ -448,8 +462,10 @@ Example:
 When these arguments are provided, the job:
 
 - creates the database if needed;
-- creates the external Parquet table if needed;
-- runs partition recovery after writing the output.
+- creates the external Parquet table if it does not already exist;
+- runs `MSCK REPAIR TABLE` after writing the output so partitions are discovered.
+
+The helper is intentionally simple. It does not manage the full schema lifecycle for existing tables and does not automatically update an existing table definition when the schema changes.
 
 Default table names:
 
@@ -458,14 +474,14 @@ Default table names:
 - Gold Sales: `retail_sales_gold_sales`
 - Gold Customer: `retail_sales_gold_customer`
 
-## 11. Schema Evolution Strategy
+## 12. Schema Evolution Strategy
 
 The assignment states that the source dataset may evolve with new attributes. This project handles that as follows:
 
 - Bronze preserves all source columns after normalizing names.
 - Silver validates a minimum required contract but keeps additive columns.
 - Gold exposes stable business contracts and only adds new fields intentionally.
-- Glue Data Catalog registration makes newly preserved Bronze/Silver attributes discoverable downstream.
+- Optional Glue Data Catalog registration makes selected Parquet outputs queryable as external tables.
 
 Example:
 
@@ -478,9 +494,11 @@ Gold output:      unchanged until the business contract is intentionally updated
 
 This balances transparent schema discovery with stable curated datasets.
 
-## 12. Logging and Traceability
+## 13. Logging and Traceability
 
 The pipeline uses structured JSON logs through `configure_logger()` in [src/core.py](src/core.py).
+
+Logs are written to stdout. Locally, they appear in the terminal. In AWS Glue, stdout and stderr are captured by CloudWatch Logs. The project does not write local log files.
 
 Every job log includes:
 
@@ -489,6 +507,7 @@ Every job log includes:
 - input/output paths;
 - row counts;
 - rejection counts where applicable;
+- event names such as `job_start`, `input_read`, `data_transformed`, `output_written`, `catalog_registered`, `job_end`, and `job_failed`;
 - exception stack traces on failure.
 
 Bronze also adds row-level lineage columns:
@@ -499,7 +518,7 @@ Bronze also adds row-level lineage columns:
 
 These fields make it possible to trace when a row was ingested, from which source file, and in which pipeline run.
 
-## 13. Troubleshooting
+## 14. Troubleshooting
 
 If PySpark fails with `JAVA_GATEWAY_EXITED` or `Unable to locate a Java Runtime`, install Java 11 or 17 and set `JAVA_HOME`.
 

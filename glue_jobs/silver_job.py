@@ -55,8 +55,15 @@ def main(argv: list[str] | None = None) -> None:
         valid_rows = valid.count()
         rejected_rows = rejected.count()
         duplicate_rows = rejected.filter("_rejection_reason LIKE '%duplicate row_id%'").count()
+        logger.info(
+            "data_transformed",
+            output_row_count=valid_rows,
+            rejected_row_count=rejected_rows,
+            duplicate_row_count=duplicate_rows,
+        )
 
         write_parquet(valid, args.output_path, silver_partition_columns())
+        logger.info("output_written", output_path=args.output_path, output_row_count=valid_rows)
         if args.catalog_database:
             register_parquet_table_in_catalog(
                 spark,
@@ -66,7 +73,14 @@ def main(argv: list[str] | None = None) -> None:
                 args.output_path,
                 silver_partition_columns(),
             )
+            logger.info("catalog_registered", database=args.catalog_database, table=args.catalog_table)
         write_parquet(rejected, args.quarantine_path)
+        logger.info(
+            "output_written",
+            output_path=args.quarantine_path,
+            output_row_count=rejected_rows,
+            dataset="silver_quarantine",
+        )
         logger.info(
             "job_end",
             status="succeeded",

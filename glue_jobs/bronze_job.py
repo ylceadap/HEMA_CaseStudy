@@ -59,8 +59,14 @@ def main(argv: list[str] | None = None) -> None:
         valid, malformed = split_bronze_by_order_date(bronze)
         valid_rows = valid.count()
         malformed_rows = malformed.count()
+        logger.info(
+            "data_transformed",
+            output_row_count=valid_rows,
+            rejected_row_count=malformed_rows,
+        )
 
         write_parquet(valid, args.output_path, bronze_partition_columns())
+        logger.info("output_written", output_path=args.output_path, output_row_count=valid_rows)
         if args.catalog_database:
             register_parquet_table_in_catalog(
                 spark,
@@ -70,8 +76,15 @@ def main(argv: list[str] | None = None) -> None:
                 args.output_path,
                 bronze_partition_columns(),
             )
+            logger.info("catalog_registered", database=args.catalog_database, table=args.catalog_table)
         if args.quarantine_path and malformed_rows:
             write_parquet(malformed, args.quarantine_path)
+            logger.info(
+                "output_written",
+                output_path=args.quarantine_path,
+                output_row_count=malformed_rows,
+                dataset="bronze_quarantine",
+            )
         logger.info(
             "job_end",
             status="succeeded",

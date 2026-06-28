@@ -28,8 +28,8 @@ The reusable PySpark transformation logic is implemented in `src/core.py`, while
 9. After Silver succeeds, Step Functions starts the Gold Sales and Gold Customer jobs in parallel.
 10. Gold Sales produces one row per order.
 11. Gold Customer produces one row per customer, including rolling distinct-order metrics.
-12. The Gold tables are registered in the AWS Glue Data Catalog.
-13. AWS Lake Formation governs access to the cataloged data.
+12. Selected Parquet outputs can be registered as external tables in the AWS Glue Data Catalog.
+13. AWS Lake Formation governs access to the cataloged metadata and underlying S3 data.
 14. Amazon Athena provides an example query interface for data analysts and other downstream users.
 
 ## Medallion Layers
@@ -65,7 +65,25 @@ Amazon EventBridge Scheduler provides the daily trigger, while AWS Step Function
 
 The execution order is:
 
-Bronze → Silver → Gold Sales and Gold Customer in parallel
+```text
+Landing CSV in S3
+    -> EventBridge Scheduler
+    -> Step Functions
+    -> Glue Bronze Job
+    -> Glue Silver Job
+        |-> Glue Gold Sales Job
+        `-> Glue Gold Customer Job
+    -> Glue Data Catalog
+    -> Lake Formation / Athena / downstream consumers
+```
+
+The two Gold jobs both read from Silver and can run in parallel after the Silver job succeeds.
+
+## Observability
+
+The Glue jobs write structured JSON logs to stdout. In local runs these logs appear in the terminal; in AWS Glue, stdout and stderr are captured by CloudWatch Logs.
+
+Each log line includes `job_name`, `pipeline_run_id`, event-specific context such as input and output paths, row counts, rejected counts, and stack traces for failures. Common event names include `job_start`, `input_read`, `data_transformed`, `output_written`, `catalog_registered`, `job_end`, and `job_failed`.
 
 ## CI/CD Design
 
@@ -107,10 +125,11 @@ The CI/CD pipeline therefore controls how code changes are tested and released.
 It does not process the daily retail sales data. The daily data workflow is handled separately by:
 
 EventBridge Scheduler
-→ Step Functions
-→ Glue Bronze
-→ Glue Silver
-→ Glue Gold jobs
+-> Step Functions
+-> Glue Bronze
+-> Glue Silver
+   |-> Glue Gold Sales
+   `-> Glue Gold Customer
 
 For example, if a developer changes the Silver rule for invalid shipment dates, CI/CD tests and deploys that code change. After deployment, the daily EventBridge and Step Functions workflow runs the new version against the incoming sales data.
 

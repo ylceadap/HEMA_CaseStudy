@@ -119,12 +119,12 @@ class ContextLogger:
 
         self._log(logging.ERROR, message, exc_info=True, **context)
 
-    def _log(self, level: int, message: str, **context: Any) -> None:
+    def _log(self, level: int, message: str, exc_info: bool = False, **context: Any) -> None:
         """Merge fixed job metadata with event-specific fields and log once."""
 
         merged = dict(self._context)
         merged.update(context)
-        self._logger.log(level, message, extra={"context": merged})
+        self._logger.log(level, message, exc_info=exc_info, extra={"context": merged})
 
 
 def configure_logger(

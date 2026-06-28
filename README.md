@@ -246,8 +246,8 @@ The rolling windows end at the latest order date in the dataset. For the provide
 
 So:
 
-- `orders_last_month` counts distinct orders from one month before `2018-12-30` through `2018-12-30`;
-- `orders_last_6_months` counts distinct orders from six months before `2018-12-30` through `2018-12-30`;
+- `orders_last_month` counts distinct orders from one month before `2018-12-30`;
+- `orders_last_6_months` counts distinct orders from six months before `2018-12-30`;
 - `orders_all_time` counts all distinct orders for that customer.
 
 Gold Customer is partitioned by snapshot date rather than order date because a customer-level row does not have one natural order date. The snapshot date is derived from `max(order_date)` in Silver.

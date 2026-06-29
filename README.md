@@ -313,43 +313,7 @@ Use Python 3.10 or newer.
 
 PySpark also needs Java. Install Java 11 or Java 17 before running the pipeline or tests.
 
-macOS example:
-
-```bash
-brew install openjdk@17
-export JAVA_HOME=$(/usr/libexec/java_home -v 17)
-```
-
-Linux example:
-
-```bash
-sudo apt-get install openjdk-17-jdk
-```
-
-Check Java:
-
-```bash
-java -version
-```
-
-## 8. Local Setup
-
-From the repository root:
-
-```bash
-python -m venv .venv
-source .venv/bin/activate
-python -m pip install --upgrade pip
-python -m pip install -e ".[dev]"
-```
-
-If a virtual environment is not needed, install directly:
-
-```bash
-python -m pip install -e ".[dev]"
-```
-
-## 9. Run Locally
+## 8. Run Locally
 
 ### Processing Assumption
 
@@ -409,7 +373,7 @@ Run static checks:
 python -m ruff check .
 ```
 
-## 10. AWS Glue Job Usage
+## 9. AWS Glue Job Usage
 
 The `glue_jobs/` scripts can be uploaded as AWS Glue PySpark jobs. They use the same logic as the local runner.
 
@@ -456,7 +420,7 @@ Typical Gold Customer job arguments:
 --pipeline_run_id 2026-06-28
 ```
 
-## 11. AWS Glue Data Catalog
+## 10. AWS Glue Data Catalog
 
 Catalog registration is optional. Local execution does not need AWS credentials because it writes local Parquet and CSV outputs only.
 
@@ -464,29 +428,7 @@ In AWS, S3 stores the actual data files, while the AWS Glue Data Catalog stores 
 
 In AWS Glue jobs, pass `--catalog_database` and optionally `--catalog_table` to create an external Parquet table entry for an output.
 
-Example:
-
-```bash
---catalog_database retail_sales
---catalog_table retail_sales_gold_sales
-```
-
-When these arguments are provided, the job:
-
-- creates the database if needed;
-- creates the external Parquet table if it does not already exist;
-- runs `MSCK REPAIR TABLE` after writing the output so partitions are discovered.
-
-The helper is intentionally simple. It does not manage the full schema lifecycle for existing tables and does not automatically update an existing table definition when the schema changes.
-
-Default table names:
-
-- Bronze: `retail_sales_bronze`
-- Silver: `retail_sales_silver`
-- Gold Sales: `retail_sales_gold_sales`
-- Gold Customer: `retail_sales_gold_customer`
-
-## 12. Schema Evolution Strategy
+## 11. Schema Evolution Strategy
 
 The assignment states that the source dataset may evolve with new attributes. This project handles that as follows:
 
@@ -495,22 +437,11 @@ The assignment states that the source dataset may evolve with new attributes. Th
 - Gold exposes stable business contracts and only adds new fields intentionally.
 - Optional Glue Data Catalog registration makes selected Parquet outputs queryable as external tables.
 
-Example:
-
-```text
-New source field: Promotion Code
-Bronze output:    promotion_code is preserved
-Silver output:    promotion_code is preserved if validation passes
-Gold output:      unchanged until the business contract is intentionally updated
-```
-
-This balances transparent schema discovery with stable curated datasets.
-
-## 13. Logging and Traceability
+## 12. Logging and Traceability
 
 The pipeline uses structured JSON logs through `configure_logger()` in [src/core.py](src/core.py).
 
-Logs are written to stdout. Locally, they appear in the terminal. In AWS Glue, stdout and stderr are captured by CloudWatch Logs. The project does not write local log files.
+Logs are written to stdout. In AWS Glue, stdout and stderr are captured by CloudWatch Logs. The project does not write local log files.
 
 Every job log includes:
 
@@ -529,14 +460,3 @@ Bronze also adds row-level lineage columns:
 - `_pipeline_run_id`
 
 These fields make it possible to trace when a row was ingested, from which source file, and in which pipeline run.
-
-## 14. Troubleshooting
-
-If PySpark fails with `JAVA_GATEWAY_EXITED` or `Unable to locate a Java Runtime`, install Java 11 or 17 and set `JAVA_HOME`.
-
-If validation fails after changing transformation logic, rerun the pipeline with `--clean` before validating:
-
-```bash
-python scripts/run_local_pipeline.py --pipeline_run_id local-001 --clean
-python scripts/validate_outputs.py
-```
